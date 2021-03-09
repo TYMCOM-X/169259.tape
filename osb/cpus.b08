@@ -1,0 +1,403 @@
+!WATCH ALL ;This CTL file checks for COMPILE/LOAD errors
+
+!CORE
+0:0+0/512 pages
+Vir. core left=5295
+
+!GFD M33
+[17:25:56]
+[ 38 P035/B08 6-22-87 /JMS ]
+(M33:930) has been duplicated on :33 and :34.
+[0.41 33.56 10 0]
+
+!;
+!;The repeated SETPROCs are because LOGOUT deletes (JMS)nnnRPG.TMP
+!;
+!CTEST SETPROC MACRO=(SYS)MACRO
+[17:26:30]
+[1.00 01.85 1 5]
+
+!COMPILE @MON62
+[17:26:32]
+MACRO: COMTXT
+X62-P035/B07
+6-17-87
+M02211 (id)
+5 = CPU serial number                         
+Pacific Standard Time   
+32 frames                         
+32 network ports                         
+16 pairs of PTYs                         
+4 disk drives                         
+1 tape drive                         
+MACRO: COMMON
+[CPU status variables at .CPSLF:: need to be defined by a macro]   
+[Requesting supervisor clock from base at startup]
+[LINKDB: Store STRNAM of only STR in QUESTR]   
+[Need to change SKIP to SKIPA at TTY0: for CTY]   
+[ODEBUG routine could use more work]   
+[CRSDEV should be replaced by RCDSTB]   
+[MONCRS check DSKCLN completed only SYSTEM structure?]   
+[MONCRS @MONCR2+5 Save STRPID in inter-monitor area REPSID]   
+[Need a SYSTEM structure to check BOOTS options?]   
+MACRO: COMMOD
+[STRDDB is vestigal.  Should the actual data block be in COMMON?]   
+[4 units on APA]
+[UNTTBL set up for DSKB only - need STROFS offset]   
+MACRO: SETETY
+Defining SETE01 for Bill Soley
+Defining SETE04 for Dennis Coffey
+Defining SETE05 for Osman Guven
+Defining SETE06 for Joe Smith
+Defining SETE07 for Carl Baltrunas
+MACRO: MONBTS
+[Need to implement BUGDMP for CRASH.EXE]   
+[F3 disk definitions are duplicated in MONBTS and APXKON]   
+MACRO: FILUUO
+[DSKCLR This entire UUO needs work, maybe a STRUUO function]   
+[NAMSTR Ought to return STRNAM( DRBSTR( DEVDRB(F) ) ) as name]   
+[UENTR++ ROOM ON DSK?  DRBALC(P4) + SKIPG STRTAL(DRBSTR(P4))]   
+[Including HACK at CHKPP1 that makes SYS:[1,1] work for accounting]   
+[RENM4A++ STROVR check for room in dir, must check file STR+STROVR]   
+[DSKCHR @DSKFND setup P2 with default DSK structure, for this job.]   
+MACRO: FILIO
+:    FTDPAG set for blocks
+[SEKPTS+5: Check need to use DRBSTR instead of STRDDB]   
+[SEKPTS+6: Uses STRPPU as divisor - all units must be same size!!!]   
+[SWPFNP Checking DSKCLN done should use DRBSTR for file]   
+MACRO: FRMSER
+[FRMGTP Needs to use DRBSTR for free disk page for CREFRM UUO]   
+MACRO: PCBIO
+[PCBCLR @PCBCL3+1 Clearing STT tables for one/all structures?]   
+[PCBCLR Called by DSKCLN UUO - should have STR setup as argument]   
+MACRO: SWAMP
+[KEPPAG,GETPAG,GETAPG Need DRBSTR setup to check DSKCLN done]   
+[Changing AOBJN at SEARC3-3 causes unneeded cylinder movement]   
+[GTSPAG,GTSAPG Check for DSKCLN done needs DRBSTR setup for user]   
+[GTSA48+4 Checking for space should use STR for this unit]   
+[GTSA70+7 Use right structure or DRBSTR block to look for SAT space]   
+[MOSPAU Most space on unit n - Needs STRucture DDB DRBSTR?]   
+[RPTSAT+3++ Check-Clear STRBTS for bad SATs needs STRucture loop]   
+[FPCSET Another DSKCLN UUO routine needs STR setup right]   
+[CHKQTA needs STR data block setup - F/DDB already for DRBSTR?]   
+MACRO: MAPIO
+[MAPUS1+5 Can't have different size units in structure?]   
+[SPRBNS STR inited? Does U already have a STR pointer?]   
+[SUPBEG++ Check STRNAM - Why bother if DSKB is only STR]   
+[Need to convert KCREAT code at CREAT2 to use LOKHPW routine.]   
+MACRO: CLUBS
+MACRO: FILFND
+[PPBBIT Why must the STR name be DSKB here?  If DRBSTR setup?]   
+MACRO: FILRIB
+MACRO: APXKON
+MACRO: CLOCK1
+[CIP5B: Check out ERRTLE, cause may want 1/sec or 1/minute]   
+[JBYNIC at MINUT1+7 disabled for now (see *.A08)]   
+[BIGBEN Check DRBSTR instead of STRDDB?]   
+[Need to use STRNXT at WDOG]   
+[Need to define other bits for RH of CTYBLF, SET HAPPY]   
+[What do we do on FOONLY for accounting?]
+[Should HRLM F,JBTPC(J) for wait states that set up F to DDB]   
+MACRO: COMCON
+[Need to teach ENABLE/DISABLE/SETE how to parse license names]   
+[COR4+1 Loop through STRs for STRTAL - Is STRNXT defined?]   
+[VERPR does not print version number of HISEG]   
+[SKEDUL @SKDCOM checks DSKCLN done in fixed STRDDB -- needs thought]   
+MACRO: CORE1
+[CORUUO @SIZCOR+5 Use DRBSTR instead of STRDDB]   
+[VCREATE @VCREA2+5 checking for DSKCLN -- Use DRBSTR not STRDDB]   
+[REMOVE +++ Checking DSKCLN done flag for error log - use DRBSTR]   
+[PGFSP Setup U/STRNAM -- USE proper DRBSTR instead of STRDDB]   
+MACRO: ERRCON
+MACRO: JOBDAT
+MACRO: ACTSER
+MACRO: PICON
+[Need more work at EXCPAR - typeout info on EXEC parity error]   
+[APRTXT macro needs to be moved into K?SYM]   
+[APRXXX should be removed]   
+[Need symbol for KI WRPI 1B21]   
+[SNNMI: SNOOP has not been written for FOONLY]
+MACRO: F3TSER
+[F3TRWC+0: Check for drive dropping off line during rewind check]
+[WRERR: What happens on memory parity?]
+[WRLOSE+2: Are there any detectable device errors?]
+[SRFX: Word count not stored in buffer]
+MACRO: SCHED1
+MACRO: SCNSER
+[TTYBPN needs filter to skip multi-word IRING messages to continue]   
+[Need to put host number somewhere, @LOGIN and RCVAUX]
+%BUG at LDEC has not been completely fixed, causes TTYNNC
+[STTLK to job 0 goes to CTY only, not OPR, job -1 does not SEND ALL]   
+[EBUS02.J01 translates PARM-D(15.) to KATAKANA(16.) for ISIS]   
+[Need to set WIDTH, ERASE, etc at ACTTYP]   
+[CTYTYO should to free CRLF at column 80]   
+[Need to make SVPPC work on KS]   
+MACRO: CIOPR
+MACRO: CTYSIM
+MACRO: SEGCON
+[SAVJB3+10: Page 400 (locations 400000 and 377777) hardcoded in SAVE]   
+[INIJDA: Page 400 (locations 400000 and 377777) hardcoded in GET]   
+[UGTSEG: Page 400 (locations 400000 and 377777) hardcoded in GETSEG]   
+[USTUWP: Page 400 (locations 400000 and 377777) hardcoded in SETUWP]   
+MACRO: TMPUUO
+MACRO: SIMIO
+[SIMIOY Check DRBSTR instead of STRDDB?]   
+MACRO: IOCSS
+[Need to add ersatz devices at DEVPHY]   
+MACRO: UUOCON
+[F3 does not execute ADJBP correctly, it does IBP ignoring nonzero AC]   
+[DLTTAB daylight saving time correct for 1987 only]   
+[DEVTYP uuo is not implemented]   
+MACRO: PATCH
+MACRO: DEBUG
+MACRO: EDDT
+[Sense switch tests %%SS1 thru %%SS6 work only on a KI]
+[TINSTR routine does not check for type-ahead on KL]
+MACRO: ONCE
+MACRO: ONCDSK
+ONCDSK PAGE 3
+U	000060'	135300	764767		LDB	T1,[POINT 14,%STR+RIBEXT,35] ;Access date of SAT.SYS
+[All references to STRPPU should be eliminated]   
+
+RIBEXT	UNDEFINED 
+?1 ERROR DETECTED
+MACRO: REFSTR
+[KS-FEFILE not allocated on ADD PACK]   
+% BAT conflict - SCNBAT uses page entries, PAKCOPY does not   
+[Should allocate all 14. data pages in UFDSET for UFD project]   
+[302.17 50:14.15 873 2085]
+
+[mail waiting]
+!CROSS
+[18:16:47]
+No cross reference files waiting to be processed[0.87 25.80 1 0]
+
+!CTEST SETPROC MACRO=(SYS)MACRO
+[18:17:13]
+[0.89 00.58 1 5]
+
+!COMPILE @MON24
+[18:17:14]
+MACRO: COMTXT
+X24-P035/B07
+6-17-87
+M02190 (id)
+574 = CPU serial number                         
+Pacific Standard Time   
+80 frames                         
+128 network ports                         
+16 disk drives                         
+4 tape drives                         
+3675 disks in blocks   
+MACRO: COMMON
+[Will reload on JOB/DEBUG stopcodes]
+[Requesting supervisor clock from base at startup]
+MACRO: COMMOD
+[4 units on FTA]
+[16 units on BPA]
+MACRO: SETETY
+Defining SETE01 for Bill Soley
+Defining SETE04 for Dennis Coffey
+Defining SETE05 for Osman Guven
+Defining SETE06 for Joe Smith
+Defining SETE07 for Carl Baltrunas
+MACRO: BPXKON
+[BPCMSZ in COMMOD must big enough for at least 18 blocks]
+MACRO: CPXKON
+[Hack at KONEN1 needs to be eliminated]
+Need to re-implement the write-enable test for 3650
+MACRO: FTASER
+[Should use BMX pointer if async error status]
+[52.89 05:42.13 2237 311]
+
+!CROSS
+[18:22:56]
+No cross reference files waiting to be processed[0.86 34.86 1 0]
+
+!CTEST SETPROC MACRO=(SYS)MACRO
+[18:23:31]
+[0.89 00.58 1 5]
+
+!COMPILE @MON32
+[18:23:32]
+MACRO: COMTXT
+X32-P035/B07
+6-17-87
+M02198 (id)
+1307 = CPU serial number                         
+Pacific Standard Time   
+127 frames                         
+128 network ports                         
+16 disk drives                         
+4 tape drives                         
+3675 disks in blocks   
+MACRO: COMMON
+[Will reload on JOB/DEBUG stopcodes]
+[Requesting supervisor clock from base at startup]
+MACRO: COMMOD
+[4 units on FTA]
+[16 units on BPA]
+MACRO: SETETY
+Defining SETE01 for Bill Soley
+Defining SETE04 for Dennis Coffey
+Defining SETE05 for Osman Guven
+Defining SETE06 for Joe Smith
+Defining SETE07 for Carl Baltrunas
+MACRO: BPXKON
+[BPCMSZ in COMMOD must big enough for at least 18 blocks]
+MACRO: CPXKON
+[Hack at KONEN1 needs to be eliminated]
+Need to re-implement the write-enable test for 3650
+MACRO: FTASER
+[Should use BMX pointer if async error status]
+[56.25 06:32.03 2370 312]
+
+!CROSS
+[18:30:04]
+No cross reference files waiting to be processed[0.85 28.96 1 0]
+
+!CTEST SETPROC MACRO=(SYS)MACRO
+[18:30:33]
+[0.89 00.56 1 5]
+
+!COMPILE @MON95
+[18:30:34]
+MACRO: COMTXT
+X95-P035/B07
+6-17-87
+M02216 (id)
+4267 = CPU serial number                         
+Pa Standard Time   
+32 frames                         
+32 network ports                         
+8 disk drives                         
+1 tape drive                         
+MACRO: COMMON
+[Will reload on JOB/DEBUG stopcodes]
+[Requesting supervisor clock from base at startup]
+MACRO: COMMOD
+[8 units on RMA]
+MACRO: SETETY
+Defining SETE01 for Bill Soley
+Defining SETE04 for Dennis Coffey
+Defining SETE05 for Osman Guven
+Defining SETE06 for Joe Smith
+Defining SETE07 for Carl Baltrunas
+MACRO: RMXKON
+MACRO: MAGSER
+[44.38 04:24.30 1824 203]
+
+!CROSS
+[18:34:58]
+No cross reference files waiting to be processed[0.85 28.68 1 0]
+
+!;
+!;Now check for undefined global symbols
+!;
+!CTEST SETPROC LOADER=(SYS)LOADER
+[18:35:27]
+[0.93 00.66 1 5]
+
+!LOAD @MON62
+[18:35:28]
+MACRO: COMTXT
+X62-P035/B07
+6-17-87
+M02211 (id)
+5 = CPU serial number                         
+Pacific Standard Time   
+32 frames                         
+32 network ports                         
+16 pairs of PTYs                         
+4 disk drives                         
+1 tape drive                         
+LOADING
+212 PAGES CORE
+[73.43 01:20.66 1182 10]
+
+!CTEST SETPROC LOADER=(SYS)LOADER
+[18:36:49]
+[0.90 01.83 1 5]
+
+!LOAD @MON24
+[18:36:51]
+MACRO: COMTXT
+X24-P035/B07
+6-17-87
+M02190 (id)
+574 = CPU serial number                         
+Pacific Standard Time   
+80 frames                         
+128 network ports                         
+16 disk drives                         
+4 tape drives                         
+3675 disks in blocks   
+LOADING
+206 PAGES CORE
+[80.17 01:21.98 1238 10]
+
+!CTEST SETPROC LOADER=(SYS)LOADER
+[18:38:13]
+[0.90 01.83 1 5]
+
+!LOAD @MON32
+[18:38:15]
+MACRO: COMTXT
+X32-P035/B07
+6-17-87
+M02198 (id)
+1307 = CPU serial number                         
+Pacific Standard Time   
+127 frames                         
+128 network ports                         
+16 disk drives                         
+4 tape drives                         
+3675 disks in blocks   
+LOADING
+214 PAGES CORE
+[84.14 01:20.73 1248 10]
+
+!CTEST SETPROC LOADER=(SYS)LOADER
+[18:39:35]
+[0.90 01.85 1 5]
+
+!LOAD @MON95
+[18:39:37]
+MACRO: COMTXT
+X95-P035/B07
+6-17-87
+M02216 (id)
+4267 = CPU serial number                         
+Pacific Standard Time   
+32 frames                         
+32 network ports                         
+8 disk drives                         
+1 tape drive                         
+LOADING
+196 PAGES CORE
+[74.64 01:22.16 1245 10]
+
+!;
+!DAYTIME
+22-JUN-1987 18:41:00 PDT
+
+!CORE
+196:196+0/512 pages
+Vir. core left=5370
+
+!SEND JMS
+[18:41:01]
+TYPE LETTER:
+; PCOM v1.63 - processed: (M33)CPUS.B08 = (M33)CPUS.CTL
+; Options: DETACH  LOG NOAPPEND SUPERSEDE LICENSE 
+; Limits: TIME:60 TRULIMIT:0 
+; Status: completed.
+; Output recorded in file (M33)CPUS.B08.
+[1.80 04.21 6 3]
+
+mail waiting
+!LOGOUT
+[18:41:05]
+781.28 tru
+terminal time: 1:15:10
+   Qà
