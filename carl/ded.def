@@ -1,0 +1,360 @@
+define ! = "comment", !! = "comment";
+!! title PEAK Definition File ;
+! *************************************************************************
+*									  *
+*		     DED History and Definition File.			  *
+*		    Dave W. Smith, September '81 - ...			  *
+*									  *
+**************************************************************************;
+
+
+require "{}[]" delimiters;
+
+! Version information and Edit history ;
+
+define
+  TymcomX = true,
+  Tops20  = false,
+  Debug   = false;
+
+define
+  appnd  (X, Y) = {X _ X & (Y)},
+  xwd    (X, Y) = {(((X) lsh 18) lor ((Y) land '777777))},
+  xwdstr (X)    = {("[" & cvos(lh(X)) & "," & cvos(rh(X)) & "]")},
+  !ver   (X, Y) = {((((X) lsh 9) lor ((Y) land '777)) land '777777)},
+  !edit  (X)    = {((X) land '777777)},
+  !date  (X)    = {"X"},
+
+  !version (X, Y, Z) =
+  {
+    define
+      DED!Date!Version  = cvps(Z);
+
+    require (xwd(X, Y)) version
+  };
+
+!		A sample usage of this macro is as follows:
+!
+!	!version(!ver('1, '0), !edit('057), !date(20-January-1983))
+!		 means "Version 1.0 (57), 20-January-1983"
+!
+!   (Please note that the invocation of !version requires a semicolon,
+!   but that syntactic discretion prevents its inclusion here.)
+;
+
+
+!version(!ver('1, '2), !edit('146), !date(3-September-1983));
+
+define
+  DED!Version!Word   = {memory['137]},
+  DED!Major!Version  = {cvos(memory['137] lsh -27)},
+  DED!Minor!Version  = {cvos((memory['137] lsh -18) land '777)},
+  DED!Edit!Version   = {cvos(memory['137] land '777777)},
+  DED!Alias          = {"PEAK"},
+  DED!Version!String = {('15 & '12) & "Rainbows are VT102s"};
+!! title PEAK History ;
+! -------------------------------------------------------------------------
+!
+!                      September-October, '81  /DWS
+!                         DED created from Void.
+!                  Inspired by EMACS, FINE, MINCE, etc.
+!
+! -------------------------------------------------------------------------
+!
+!  Field test releases:
+!  --------------------
+!  V0.1         8..81           Released for field test in mid-October.
+!  V0.2         11.4.81         Released for field test.  A few random
+!                               bugs fixed.  
+!  V0.3         11.11.81        More random bug fixes.
+!  V0.4         11.20.81        Some new commands. (Wipe, copy, safe
+!                               exit). 
+!  V0.5         11.24.81        ^G is uniform abort character.
+!  V0.6         12.10.81        Bug fix in kill code (didn't initialize
+!                               Kill!Pnt). 
+!                               Add "text" mode with electric space.
+!                               Add commands to switch modes.
+!                               Add "kill whitespace", "center line",
+!                               "right justify line" commands. 
+!  V0.7         12.14.81        Add heuristics to redisplay and fix H19
+!                               bug. 
+!  V0.10        12.16.81        Add "change" and "query change" commands.
+!  V0.11        1.5.82          Fix terminal input routine to present
+!                               less of a load on the system.  (i.e. no
+!                               spinlock for input). 
+!  V0.12        1.12.82         Fix text mode space to kill trailing
+!                               spaces. 
+!  V0.13        2.2.82          Some cosmetic changes.
+!  V0.14        2.19.82         New window and redisplay modules.  Major
+!                               changes, including line wrap, hooks for
+!                               split screen, overwriting insert, file
+!                               locking, and more. 
+!  V0.15        3.4.82          Buffer all output in ther terminal module
+!                               and flush with one auxcal (.axost).
+!                               *Big* win.  Some other smallish bug
+!                               fixes. (Needed to send Yellow ball to
+!                               make sure chars got out before reseting
+!                               terminal). 
+!  V0.16        3.9.82          Parenthesis matching commands, change
+!                               behaviour of ^v, user-friendlier
+!                               searches.  
+!  V0.17        3.15.82         Filename "alias" support for MAGNUM.
+!                               Some fixes in the redisplay to speed
+!                               things up. 
+!  V0.20        3.18.82         Make DED know about <lf>, instead of
+!                               stripping them out a la FINE.  Support
+!                               for "overstriking" in WINDOW.  Fix
+!                               commands to expect <cr><lf> as
+!                               end-of-line.  
+!  V0.21        3.19.82         Big Files!  Fast read & write!  Big win!
+!                               Also a redisplay optimization &
+!                               'QueryKey' command.  
+!  V0.22        3.23.82         Patch for imbedded nulls & sequence #'s.
+!  V0.23        3.24.82         Change delimeters on search commands to
+!                               reflect change in philosophy on handling
+!                               <cr><lf> pairs as atomic.  
+!  V0.24        3.25.82         Change/Q-Change now issue non-NULL
+!                               message when done.  Access functions to
+!                               bits in C!Tab[].
+!  V0.25        4.2.82          Bug checking empty files for sequence
+!                               numbers.  Make /READ work.
+!  V0.26        4.9.82          ReSearch commands.  Small edits.
+!  V0.27        4.12.82         *CaseMatch* E-Var, more commands.
+!  V0.27        4.14.82         Marks 0..9 and related commands.  Goto
+!                               Mark cmd. 
+!  V0.30                        Lost in the shuffle.
+!  V0.31        4.21.82         Implement split window features.
+!                               Date/Time stuff. 
+!  V0.32        4.22.82         Optimize search code.
+!  V0.33        4.26.82         Code to run off wrap correctly. Fix /RPG
+!                               support. 
+!  V0.34        4.29.82         ReInit the terminal on ^L.
+!  V0.35        5.3.82          Runtime help system (first cut).
+!  V0.36        5.5.82          "Sticky column" fixed.  Various other
+!                               fixes.  Unindent fixed for big args.
+!                               Redisplay fix for right margin. 
+!  V0.37        5.25.82         Complete rework of C!ArgV.  Bugx fixes.  
+!  V0.40        6.16.82         Checkpoint logic. Multiple file code.
+!  V0.41        6.22.82         0.40 broke MAGNUM interface.  Fix it.
+!  V0.42        6.24.82         Misc bug fixes.
+!  V0.43        7.1.82          B!Kill forgot to B!Restore.  Gak!
+!  V0.44        7..82           Tops-20 first cut.  Slow File I/O.
+!  V0.45        8.2.82          Folded Tops-20 stuff back into Tymcom-X
+!                               stuff. Optimized B!GetC.  Hacked on
+!                               ReDisplay, Term.  C!CmdFile stuff.
+!  V0.46        8.30.82         Tym430 support. Various other stuff.
+!  V0.47        10.5.82         Start of massive cleanup for release.
+!                               Add 'special' character bit. 
+!  V0.50                        Internal testing before final release.
+!  V0.51                        Internal " " ".  M-Search.
+!  V0.52                        Internal " " ".  C!Indent now breaks
+!                               lines.  C!Arg fixed. 
+!  V0.53                        Internal " " ".  Fixed horrid bug in
+!                               C!GetC that killed macros when executed
+!                               from command files. 
+!  V0.54                        Internal " " ". B!Fini now writes out all
+!                               modified buffers. 
+!  V0.55                        Internal " " ". No move SYMBOL.  Symbol
+!                               table is build via macro in COMAND.
+!                               Slight win on startup. 
+!  V0.56                        Internal " " ".  Added ChrMask to keep
+!                               funny bits in chrtab from screwing up the
+!                               token stuff. Also fixed checkpointing.
+!
+! -------------------------------------------------------------------------
+!
+!  V1.0         1.12.83         At long last ... (a great many things
+!                               have passed under the bridge since 0.56
+!                               in the way of bug fixes - kmd)
+!  V1.1         3.20.83         Cleaning up bugs in file/buffer systems
+!                               which result in death when manipulating
+!                               many and large buffers.  Also improving
+!                               the Checkpoint facility.  A good many
+!                               other bugs are fixed, as well. 
+!  V1.2         9.2.83          Fix of 79th-character wrap-around problem
+!                               (thanks to TJB).  Add British Petroleum
+!                               customer Usernames to the exception list.
+!                               Add VT102 support with jump-scroll-only
+!                               compatible support of insert/delete
+!                               lines (Thanks to Carl).
+!                               Change redisplay module to send a string
+!                               to the display, to fix backpressure
+!                               problem with VT102 fix.
+!
+!
+! ------------------------------------------------------------------------;
+!! title Operating System dependent definitions. ;
+
+ifcr Tops20 thenc
+  external simple boolean procedure Kequ (string Str1, Str2);
+
+    ! Case-independent string-comparison function
+    ;
+endc
+
+ifcr TymcomX thenc
+  define
+    exit = {calli(0, '12)};
+
+      ! An exit call which allows us to get out without SAIL's end-of-job
+      ! message sneaking out.
+      ;
+endc
+!! title PEAK definitions ;
+! Some operations used widely throughout the kingdom ;
+
+define
+  ceiling (X, Y) = {((X + Y - 1) div Y)};
+
+    ! Least integer >= X/Y ;
+
+
+define
+  incr (X, Y) =
+  {
+    X _ X + 
+	ifc (length(cvps(Y))) thenc
+	  Y
+	elsec
+	  1
+	endc
+  };
+
+    ! Increment a vairable ;
+
+
+define
+  decr (X, Y) =
+  {
+    X _ X -
+	ifc (length(cvps(Y))) thenc
+	  Y
+	elsec
+	  1
+	endc
+  };
+
+    ! Decrement a variable ;
+
+
+  define
+    set (X, Y) =
+    {
+      X _
+	  ifc (length(cvps(Y))) thenc
+	    Y
+	  elsec
+	    true
+	  endc
+    },
+
+    clear  (X) = {X _ false},
+    toggle (X) = {X _ not X};
+
+
+! some stuff for debugging ;
+
+ifcr DEBUG thenc
+ define trusted = {};
+elsec
+ define trusted = {safe};
+endc
+
+
+! macros to assist control structures ;
+
+define
+  upto    = {step 1 until},
+  downto  = {step -1 until},
+  forever = {while true};
+
+define	Begin!Code = {
+  Start!Code
+    define P='17, SP='16, T1='1, T2='2;
+};
+
+
+! word and bit access macros ;
+
+define
+  LH (word)  = {((word) lsh -18)},
+  RH (word)  = {((word) land '777777)},
+  HR (word)  = {((word) land '777777)},
+  HL (word)  = {((word) lsh 18)},
+  !mask (N)  = {((1 lsh N) - 1)},
+  MaxInteger = !mask(35)
+;
+
+define
+  bit (X, Y) =
+  {
+    ifcr (length(cvps(Y))) thenc
+      ((X) lsh (35-(Y)))
+    elsec
+      (1 lsh (35-(X)))
+    endc
+  };
+
+
+! commonly used characters equates ;
+
+define
+  BEL = '7,  BS  = '10,  TAB = '11,  LF = '12,  FF = '14,
+  CR = '15,  CAN = '30,  ESC = '33,  DEL = '177,
+  Meta = '200,  Meta2 = '400,
+  crlf = {('15 & '12)};
+
+
+! bit definitions for the character table (C!Tab).  The table has one
+!  entry for each ASCII character, with bits in the left half and
+!  the upshifted character in the right half. ;
+
+define
+  IsAlpha   = bit(1),
+  IsNum     = bit(2),
+  IsToken   = bit(3),
+  IsWhite   = bit(4),
+  IsEOL     = bit(5),
+  IsDelim   = bit(6),
+  IsYes	    = bit(9),
+  IsNo      = bit(10),
+  IsAbort   = bit(11),
+  IsSpecial = bit(12)
+;
+
+
+! ..  and a mask to keep extraneous bits from messing stuff up. ;
+
+define
+  ChrMask = IsAlpha+IsNum+IsToken+IsDelim+IsSpecial;
+
+
+! Buffer definitions. ;
+
+define BasePage    = 100;		! page number of the base of the
+					!  in-core buffer ;
+define MAXFILESIZE = 400 * 512;		! the maximum number of pages we
+					!  can handle ;
+define BUFMAX      = 5;			! Max number of buffers we may have ;
+
+define GAPMIN      = 1 * 512 * 5;	! Minumum size we want gap to be ;
+define GAPMAX      = 3 * 512 * 5;	! Biggest size we want gap to be ;
+define GAPEXPAND   = 512;		! words to add to gap ;
+define GAPSHRINK   = 512;		! words to remove from gap ;
+
+
+! stuff used by the search code ;
+
+define MAXSEARCHSTRING = 80;	! largest string size we'll search for ;
+define MAXMSEARCH      = 5;
+
+
+! other useful equates ;
+
+define
+  FORWARDS = 1,
+  BACKWARDS = -1;
+
+
+! ***************************  end of DED.DEF  ***************************;
+   
