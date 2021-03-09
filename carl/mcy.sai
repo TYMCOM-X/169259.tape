@@ -1,0 +1,56 @@
+begin
+
+    integer procedure mc;
+    start!code
+      define calli='047000000000;
+	label !skip;
+
+	hrroi 1,-'15;
+	calli 1,'41;
+	  jfcl;
+	jumpn 1,!skip;
+	calli 1,'23;
+	  jfcl;
+  !skip:
+     end;
+
+	integer chan,brk,brktab,eof,flag, oldmcy, newmcy, oldms, newms;
+	string file;
+
+	file_ cvs( 1000+calli(-1,'30) )[2 for 3] & "MCY.TMP";
+
+	open( chan_getchan, "DSK", 1, 1,1, 256,brk,eof_-1 );
+	if (eof neq 0)
+	 then usererr( 0,0, "no disk? system is sick!", "X" );
+	lookup( chan, file, flag_ -1 );
+
+	if (flag neq 0)
+	 then oldmcy_ 0
+	 else begin
+	    setbreak( brktab_getbreak, '12, '15, "INSK" );
+	    oldmcy_ cvd( input( chan, brktab ) );
+	    oldms_ cvd( input( chan, brktab ) );
+	 end;
+	close( chan );
+
+	newmcy_ mc;
+	newms_ calli( -1, '23 );
+
+	enter( chan, file, flag_-1 );
+	if ( flag = 0 )
+	 then begin
+	    cprint( chan, newmcy, '15 & '12 );
+	    cprint( chan, newms, '15 & '12 );
+	 end;
+
+	close( chan );
+	release( chan );
+
+	if ( newms < oldms )
+	 then newms_ newms + (1000*60*60*24);
+
+	print( "Microcycles: ",newmcy-oldmcy," ms: ",newms-oldms,
+		" ratio mcy/ms: ",(newmcy-oldmcy)/(newms-oldms),  '15&'12 );
+	calli( 1, '12 );
+
+end;
