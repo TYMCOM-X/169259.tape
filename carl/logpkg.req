@@ -1,0 +1,9 @@
+
+require "  LOG Supplementary Pagkage  " message;
+
+External simple         procedure Talk( Integer Job; String Msg );
+External simple boolean procedure CTYLog( String Text; Boolean Date(false) );
+External simple         procedure SetLog( String File; Boolean Critical( false ) );
+External simple         procedure LogInfo( String Text );
+
+require "(CARL)LOGPKG" library;
