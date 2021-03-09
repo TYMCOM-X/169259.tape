@@ -1,0 +1,1562 @@
+Received: from D23.Tymnet.COM by D35.Tymnet.COM; Fri, 10 Feb 89 23:07:16 PST
+Return-path: <OPER@D23.Tymnet.COM> 
+From: OPER@D23.Tymnet.COM 
+Date: Sat, 11 Feb 89 1:05:09 CST 
+To: OPER, SRA, MEYERG, JENGLISH, LELANDY, OSMAN, CARL, JMS, ZONE, SCRIBNER,
+	RODDAMJ, TYMRES5, PKRUMV@F33, DIAG10D 
+
+SYSTEM D23-OO/APR=1275/DOWN AT 22:02 CST 2-10-89 AND UP/
+AT 00:53 CST 2-11-89/DOWN PER SCHEDULED ASP/SET-B/SAVE  /
+AND VERIFY COMPLETE/UP FULL DSKCLN/P035\D10 MONITOR    /
+2048K MEMORY ONLINE/.
+THANK YOU,  DALLAS OPERATIONS................< ERWIN LG >
+Received: from F74.Tymnet.COM by D35.Tymnet.COM; Fri, 10 Feb 89 23:13:20 PST
+Return-path: <OPER@F74.Tymnet.COM> 
+From: OPER@F74.Tymnet.COM 
+Date: Fri, 10 Feb 89 23:12:47 PST 
+To: OPER, BILLF, CARL, JMS, DANIELSR, OSMAN, IPC.S/PAL@EMSIPC.ONTYME, MICHAELB,
+	TERRYB, SRA, RICHARDSON, PKRUMV@F33, LELANDY@D35 
+
+F74/DDD APR:  1354 - SPECIAL
+SCHEDULED DOWN - 02/10/89 1600
+            UP - 02/10/89 2100
+
+   ACTUAL DOWN - 02/10/89 1601
+      ANSWERED - 02/10/89 2253
+
+LOADED P035/D11 FROM DISK.  SYSTEM CHOSE FAST DSKCLN AT 2246.
+MEMORY ONLINE: 4096K   BUSS:  4   INTERLEAVE
+   SCHEDULED DOWN FOR P/C OF 311 (PACKID 740007) TO 316.
+   FSC RAN DIAGS AND DSF FOR 3 HOURS WITH NO PROBLEMS.  FIRST 
+   ATTEMPT TO RUN DSKCLN ABORTED DUE TO DRIVE 316 GOING ON AND OFF
+   LINE.  FSC, AFTER SEVERAL ATTEMPTS TO BRING UP SYSTEM CHANGED
+   ADDRESS ON B2 AND F2.  COPY WAS FROM G2 TO F2.  SYSTEM IS
+   CURRENTLY UP ON F2.
+   
+
+FREMONT OPERATIONS...TERRYB
+From: Carl A Baltrunas <Carl@F35.Tymnet> 
+Date: Sat, 11 Feb 89 2:17:00 PST 
+To: Ed Mulrean <mulrean%cuavax.dnet@netcon.cua.edu> 
+Subject: Mail bounce 
+
+Hello Ed,
+  This is a test!  They've finally gotten our internet connection in
+place in St. Louis and I can receive internet mail again.
+
+  Feel free to forward this test back so I can see what you received.
+I don't know if it will like carl@D35.Tymnet.com or carl@F74.Tymnet.com
+as a response... or even carl@opus.Tymnet.com  or cbaltru@antares.Tymnet.com
+
+When our workstations are connected to the campus-wide ethernet here in
+San Jose, then I should be able to be reached as carl@doctor.tymnet.com
+but in the meantime, oe or all of the above addresses should reach me when
+the X.25 link between SanJose and StLouis is up..
+
+This message is sent from D35.Tymnet.com.
+
+/Carl
+Received: from F33.Tymnet.COM by D35.Tymnet.COM; Sat, 11 Feb 89 7:01:41 PST
+Return-path: <OPER@F33.Tymnet.COM> 
+From: OPER@F33.Tymnet.COM 
+Date: Sat, 11 Feb 89 7:01:20 PST 
+To: OPER, BILLF, CARL, JMS, DANIELSR, OSMAN, IPC.S/PAL@EMSIPC.ONTYME, MICHAELB,
+	TERRYB, SRA, RICHARDSON, PKRUMV@F33, LELANDY@D35 
+
+F33/CCC APR:  1427 - ASP DUMP
+SCHEDULED DOWN - 02/10/89 2300
+            UP - 02/11/89 0500
+
+   ACTUAL DOWN - 02/10/89 2305
+      ANSWERED - 02/11/89 0425
+
+NO DSKCLN WAS RUN BEFORE DUMP.
+   G O O D  D U M P
+SET USED: 1   NUMBER OF TAPES USED: 44
+
+LOADED FTA0 FROM DISK.  SYSTEM CHOSE FAST DSKCLN AT 0443.
+   MONITIR PO35/D11
+
+FREMONT OPERATIONS...CHARLESC
+Received: from EMSTXS.Ontyme.Tymnet by D35.Tymnet.COM; Sat, 11 Feb 89 14:02:00
+	PST
+Received: from F74.Tymnet.COM by EMSTUMS.Ontyme.Tymnet; Fri, 10 Feb 89 14:06:02
+	PST
+Received: from D35.Tymnet.COM by F74.Tymnet.COM; Fri, 10 Feb 89 14:05:18 PST
+Received: from EMSFSC.Ontyme.Tymnet by D35.Tymnet.COM; Fri, 10 Feb 89 14:04:45
+	PST
+Return-path: <IPC.J/KRIVANEC@EMSFSC.Ontyme.Tymnet> 
+From: IPC.J/KRIVANEC@EMSFSC.Ontyme.Tymnet 
+Date: 09 FEB 89 15:11:53 
+To: FSC.C/BALTRUNAS@EMSFSC.Ontyme.Tymnet 
+Cc: FSC.C/BALTRUNAS@Ontyme.Tymnet, FSC.O/GUVEN@Ontyme.Tymnet 
+Message-id: A96931@Ontyme.Tymnet 
+
+Makoto,
+
+I think we have solved your problem. We have added Remote License (RL)
+to TOKPRINT. We need you to try SPOOL again. If you still have a problem
+we would like to watch the procedures you take to run Spool. In order to
+do this, we want to set up a time where Carl Baltrunas and yourself (or
+whom the party will be) when you/they tries Spool. Carl is available today.
+
+Please send us an ontyme if you still can not run Spool. We will check our
+ontymes frequently this evening.
+
+I am hoping that by adding RL license solved our problems, but if it did
+not, we are standing by to help you.
+
+Best regards,
+Jan
+Received: from EMSTXS.Ontyme.Tymnet by D35.Tymnet.COM; Sat, 11 Feb 89 14:02:09
+	PST
+Received: from F74.Tymnet.COM by EMSTUMS.Ontyme.Tymnet; Fri, 10 Feb 89 14:08:51
+	PST
+Received: from D35.Tymnet.COM by F74.Tymnet.COM; Fri, 10 Feb 89 14:05:24 PST
+Received: from EMSFSC.Ontyme.Tymnet by D35.Tymnet.COM; Fri, 10 Feb 89 14:04:54
+	PST
+Return-path: <IPC.J/KRIVANEC@EMSFSC.Ontyme.Tymnet> 
+From: IPC.J/KRIVANEC@EMSFSC.Ontyme.Tymnet 
+Date: 09 FEB 89 17:17:02 
+To: FSC.C/BALTRUNAS@EMSFSC.Ontyme.Tymnet 
+Message-id: A96996@Ontyme.Tymnet 
+Subject: Sppol Problem on F74 with TOKPRINT 
+
+     
+     
+        Network Information Service          OnTyme  NIS.TC 
+                                             Phone   [-81] (3) 551 6115    
+                                             Fax     [-81] (3) 551 6355    
+Date      : 89/02/10  09:30 (JST)  
+     
+Attn      : Jan Krivanec    (IPC.J/KRIVANEC) 
+     
+Copies    : Ken BeDell      (NSCMS.K/BEDELL) 
+            Kuni Kamoi      (NIS.KAMOI) 
+            Osaka Officce   (NIS.OSAKA) 
+     
+From      : Makoto Ogura    (NIS.OGURA) 
+     
+Subject   : Sppol Problem on F74 with TOKPRINT    
+            Ref A96929   
+     
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+     
+Jan san,  
+     
+Thank you for your arrangement about the matter.  
+     
+This morning, I tried to hadle the spooling out and found no problem. 
+     
+Best regards,  
+Makoto
+Received: from EMSTXS.Ontyme.Tymnet by D35.Tymnet.COM; Sat, 11 Feb 89 14:02:17
+	PST
+Received: from F74.Tymnet.COM by EMSTUMS.Ontyme.Tymnet; Fri, 10 Feb 89 14:11:37
+	PST
+Received: from D35.Tymnet.COM by F74.Tymnet.COM; Fri, 10 Feb 89 14:05:29 PST
+Received: from EMSFSC.Ontyme.Tymnet by D35.Tymnet.COM; Fri, 10 Feb 89 14:05:01
+	PST
+Return-path: <IPC.J/KRIVANEC@EMSFSC.Ontyme.Tymnet> 
+From: IPC.J/KRIVANEC@EMSFSC.Ontyme.Tymnet 
+Date: 09 FEB 89 17:19:30 
+To: FSC.C/BALTRUNAS@EMSFSC.Ontyme.Tymnet 
+Cc: NIS.OGURA@Ontyme.Tymnet, NIS.KAMOI@Ontyme.Tymnet,
+	NSCMS.K/BEDELL@Ontyme.Tymnet, NIS.OSAKA@Ontyme.Tymnet,
+	FSC.C/BALTRUNAS@Ontyme.Tymnet, FSC.O/GUVEN@Ontyme.Tymnet 
+Message-id: A96997@Ontyme.Tymnet 
+
+MAKOTO,
+
+ITS GREAT TO HEAR THE PROBLEM HAS BEEN SOLVED.
+
+
+THANK YOU,
+JAN
+Received: from F74.Tymnet.COM by D35.Tymnet.COM; Sat, 11 Feb 89 21:14:05 PST
+Return-path: <OPER@F74.Tymnet.COM> 
+From: OPER@F74.Tymnet.COM 
+Date: Sat, 11 Feb 89 21:13:41 PST 
+To: OPER, BILLF, CARL, JMS, DANIELSR, OSMAN, IPC.S/PAL@EMSIPC.ONTYME, MICHAELB,
+	TERRYB, SRA, RICHARDSON, PKRUMV@F33, LELANDY@D35 
+
+F74/DDD APR:  1354 - ASP DUMP
+SCHEDULED DOWN - 02/11/89 16:00
+            UP - 02/11/89 21:00
+
+   ACTUAL DOWN - 02/11/89 16:25
+      ANSWERED - 02/11/89 20:59
+
+NO DSKCLN WAS RUN BEFORE DUMP.
+   G O O D  D U M P
+SET USED: 2   NUMBER OF TAPES USED: 33
+
+LOADED P035/D-11 FROM DISK.  SYSTEM CHOSE FAST DSKCLN AT 20:52.
+   TAPES 15 THROUGH 20 REWRITTEN DUE TO MULTIPLE
+   DATA WRITE ERRORS ON FTA3.
+   CYCLED OUT TAPES 11 THROUGH 33.
+   SET #2  33 TAPES.
+
+FREMONT OPERATIONS...SBULL
+Received: from D34.Tymnet.COM by D35.Tymnet.COM; Sat, 11 Feb 89 21:48:26 PST
+Return-path: <OPER@D34.Tymnet.COM> 
+From: OPER@D34.Tymnet.COM 
+Date: Sat, 11 Feb 89 23:14:01 CST 
+To: OPER, SRA, MEYERG, JENGLISH, LELANDY, OSMAN, CARL, JMS, ZONE, SCRIBNER,
+	RODDAMJ, TYMRES5, PKRUMV@F33, DIAG10D 
+
+D34-ZZ/NODE-4200/APR-1286/SYSTEM DOWN PER SCHEDULE AT 20:01(CST)
+2-11-89 FOR ASP SET -B, SAVE AND VERIFY COMPLETED SUCCESSFULLY
+/SYSTEM UP AT 23:11(CST)2-1189/FULL DSKCLN/MONITOR P035/D-8
+2048K MEMORY ONLINE. THANK YOU FROM SMITHD/DALLAS OPERATIONS.
+Received: from F26.Tymnet.COM by D35.Tymnet.COM; Sat, 11 Feb 89 22:58:34 PST
+Return-path: <OPER@F26.Tymnet.COM> 
+From: OPER@F26.Tymnet.COM 
+Date: Sat, 11 Feb 89 22:58:00 PST 
+To: OPER, BILLF, CARL, JMS, DANIELSR, OSMAN, IPC.S/PAL@EMSIPC.ONTYME, MICHAELB,
+	TERRYB, SRA, RICHARDSON, PKRUMV@F33, LELANDY@D35 
+
+F26/FFF APR:  1324 - ASP DUMP/PREVENTATIVE MAINTEANCE
+SCHEDULED DOWN - 02/11/89 18:00
+            UP - 02/11/89 22:30
+
+   ACTUAL DOWN - 02/11/89 18:07
+      ANSWERED - 22:05
+
+        TO FSC - 02/11/89 21:25
+RETURNED TO OPERATIONS - 02/11/89 22:00
+
+NO DSKCLN WAS RUN BEFORE DUMP.
+   G O O D  D U M P
+SET USED: 2   NUMBER OF TAPES USED: 30
+
+   @21:25 SYSTEM 26 WAS TURNED O/T FSC TO
+   RETURN IT TO IT'S ORIGINAL HARDWARE.
+   SYSTEM ANSWERED @ 21:05 ON "NEWMON".
+   TAPES 12 THROUGH 30 CYCLED OUT.
+
+   RETURNED SYSTEM 26 TO IT'S ORIGINAL HARDWARE.
+   SWAPPED WITH SYSTEM 32.
+
+LOADED P035/D-11 FROM DISK.  SYSTEM CHOSE FAST DSKCLN AT 2200.
+FREMONT OPERATIONS...SBULL
+Received: from D37.Tymnet.COM by D35.Tymnet.COM; Sun, 12 Feb 89 0:23:47 PST
+Return-path: <OPER@D37.Tymnet.COM> 
+From: OPER@D37.Tymnet.COM 
+Date: Sun, 12 Feb 89 2:21:53 CST 
+To: OPER, SRA, MEYERG, JENGLISH, LELANDY, OSMAN, CARL, JMS, ZONE, SCRIBNER,
+	RODDAMJ, TYMRES5, PKRUMV@F33, DIAG10D 
+
+SYSTEM D37-HH/APR=1461/DOWN AT 22:00 CST 2-11-89 AND UP AT/
+01:56 CST 2-12-89/DOWN PER SCHEDULED ASP/SET-B/SAVE  AND/
+VERIFY COMPLETE/UP FULL DSKCLN/P035\D-7 MONITOR/
+4096K MEMORY ONLINE/.
+THANK YOU,  DALLAS OPERATIONS...................< ERWIN LG >
+From: OPER@D35.Tymnet.COM 
+Date: Sun, 12 Feb 89 6:12:53 CST 
+To: OPER, SRA, MEYERG, JENGLISH, LELANDY, OSMAN, CARL, JMS, ZONE, SCRIBNER,
+	RODDAMJ, TYMRES5, PKRUMV@F33, DIAG10D 
+
+SYSTEM D35-QQ/APR=1096/DOWN AT 04:04 CST 2-12-89 AND UP/
+AT 06:11 CST 2-12-89/DOWN PER SCHEDULED ASP/SET-B/SAVE /
+AND VERIFY COMPLETE/SYS. UP FULL DSKCLN/P035\D-7 MONITOR/
+2048K MEMORY ONLINE/.
+THANK YOU,   DALLAS OPERATIONS.............< ERWIN LG >
+Received: from D56.Tymnet.COM by D35.Tymnet.COM; Sun, 12 Feb 89 4:20:13 PST
+Return-path: <OPER@D56.Tymnet.COM> 
+From: OPER@D56.Tymnet.COM 
+Date: Sun, 12 Feb 89 5:33:00 CST 
+To: OPER, SRA, MEYERG, JENGLISH, LELANDY, OSMAN, CARL, JMS, ZONE, SCRIBNER,
+	RODDAMJ, TYMRES5, PKRUMV@F33, DIAG10D 
+
+SYSTEM D56-JJ/APR=1383/DOWN AT 02:06 CST 2-12-89 AND UP/
+AT 05:19 CST 2-12-89/DOWN PER SCHEDULED ASP/SET-B/SAVE /
+AND VERIFY COMPLETE/SYSTEM UP FULL DSKCLN/P035\D-7 MONITOR.
+4096K MEMORY ONLINE/.
+THANK YOU,   DALLAS OPERATIONS..................< ERWIN LG >
+Received: from F74.Tymnet.COM by D35.Tymnet.COM; Sun, 12 Feb 89 16:07:50 PST
+Return-path: <DANIELSR@F74.Tymnet.COM> 
+From: DANIELSR@F74.Tymnet.COM 
+Date: Sun, 12 Feb 89 16:05:47 PST 
+To: OPER, BILLF, CARL, JMS, DANIELSR, OSMAN, IPC.S/PAL@EMSIPC.ONTYME, MICHAELB,
+	TERRYB, SRA, RICHARDSON, PKRUMV@F33, LELANDY@D35 
+
+
+PLEASE RESSEND MAIL REGARDING F26 AND F32 NODE SWAP.
+
+F26 SWAPPED FROM NODE --------- TO NODE ----------
+
+F32 SWAPPED FROM NODE---------TO NODE -----------
+
+SEE SPECIAL EVENTS ON WHOM TO SEND THE NOTIFICTION TO.
+
+THANKS RICK
+
+Received: from D31.Tymnet.COM by D35.Tymnet.COM; Sun, 12 Feb 89 23:50:56 PST
+Return-path: <OPER@D31.Tymnet.COM> 
+From: OPER@D31.Tymnet.COM 
+Date: Mon, 13 Feb 89 1:48:54 CST 
+To: OPER, SRA, MEYERG, JENGLISH, LELANDY, OSMAN, CARL, JMS, ZONE, SCRIBNER,
+	RODDAMJ, TYMRES5, PKRUMV@F33, DIAG10D 
+
+SYSTEM D31-YY/APR=1415/DOWN AT 22:00 CST 2-12-89 AND UP/
+AT 01:36 CST 2-13-89/DOWN PER SCHEDULED ASP/SET-B/SAVE /
+AND VERIFY COMPLETE/SYS UP FULL DSKCLN/P035\D-7 MONITOR/
+2048K MEMORY ONLINE/.
+THANK YOU,   DALLAS OPERATIONS.............< ERWIN LG >
+Received: from F58.Tymnet.COM by D35.Tymnet.COM; Mon, 13 Feb 89 1:16:37 PST
+Return-path: <OPER@F58.Tymnet.COM> 
+From: OPER@F58.Tymnet.COM 
+Date: Mon, 13 Feb 89 1:16:14 PST 
+To: OPER, BILLF, CARL, JMS, DANIELSR, OSMAN, IPC.S/PAL@EMSIPC.ONTYME, MICHAELB,
+	TERRYB, SRA, RICHARDSON, PKRUMV@F33, LELANDY@D35 
+
+F58/EEE APR:  1332 - ASP DUMP
+SCHEDULED DOWN - 02/12/89 2300
+            UP - 02/13/89 0130
+
+   ACTUAL DOWN - 02/12/89 2300
+      ANSWERED - 02/13/89 0057
+
+NO DSKCLN WAS RUN BEFORE DUMP.
+   G O O D  D U M P
+SET USED: 1   NUMBER OF TAPES USED: 17
+
+LOADED P035/D11 FROM DISK.  SYSTEM CHOSE FAST DSKCLN AT 0053.
+FREMONT OPERATIONS...LUKE
+Received: from F22.Tymnet.COM by D35.Tymnet.COM; Mon, 13 Feb 89 3:34:48 PST
+Return-path: <OPER@F22.Tymnet.COM> 
+From: OPER@F22.Tymnet.COM 
+Date: Mon, 13 Feb 89 3:34:26 PST 
+To: OPER, BILLF, CARL, JMS, DANIELSR, OSMAN, IPC.S/PAL@EMSIPC.ONTYME, MICHAELB,
+	TERRYB, SRA, RICHARDSON, PKRUMV@F33, LELANDY@D35 
+
+F22/GGG APR:  1421 - ASP DUMP
+SCHEDULED DOWN - 02/13/89 0000
+            UP - 02/13/89 0330
+
+   ACTUAL DOWN - 02/13/89 0000
+      ANSWERED - 02/13/89 0309
+
+NO DSKCLN WAS RUN BEFORE DUMP.
+   G O O D  D U M P
+SET USED: 2   NUMBER OF TAPES USED: 26
+
+LOADED P035/D11 FROM DISK.  SYSTEM CHOSE FAST DSKCLN AT 0307.
+FREMONT OPERATIONS...LUKE
+Received: from F74.Tymnet.COM by D35.Tymnet.COM; Mon, 13 Feb 89 7:27:19 PST
+Return-path: <DANIELSR@F74.Tymnet.COM> 
+From: DANIELSR@F74.Tymnet.COM 
+Date: Mon, 13 Feb 89 7:25:11 PST 
+To: OSMAN, CARL, JMS, DANIELSR 
+
+
+Please change F26 monitors to reflect it is on Hardware III, CPU
+serial  number 1336,; and
+
+X32 is on Hardware JJJ, CPU number 1081.
+
+thanks 
+
+Rick
+Received: from F74.Tymnet.COM by D35.Tymnet.COM; Mon, 13 Feb 89 13:17:12 PST
+Return-path: <JMS@F74.Tymnet.COM> 
+From: Joe Smith <JMS@F74.Tymnet.COM> 
+Date: Mon, 13 Feb 89 13:11:01 PST 
+To: DANIELSR@F74.Tymnet.COM 
+Cc: OSMAN, CARL 
+Subject: Re: "Please change F26 monitors to"... 
+In-reply-to: your message of Mon, 13 Feb 89 7:25:11 PST
+
+The current status of the "musical CPUs" is:
+
+KL #1081 (JJJ) was F29, then F26, is now X32 using ND6415.
+KL #1307 (XXX) was X32, then X29, is now unused (F29).  ND2100 is unused.
+KL #1324 (FFF) was F26, then X32, is now unused (B39).  BB2674 is unused.
+KL #1336 (III) was B39, then X39, is now F26 using N10350.
+
+(SYS)SYSTEM.SAV on F26 and X32 have been updated.
+
+			/Joe
+
+Received: from F33.Tymnet.COM by D35.Tymnet.COM; Mon, 13 Feb 89 14:51:11 PST
+Return-path: <OPER@F33.Tymnet.COM> 
+From: OPER@F33.Tymnet.COM 
+Date: Mon, 13 Feb 89 14:50:36 PST 
+To: OPER, BILLF, CARL, JMS, DANIELSR, OSMAN, IPC.S/PAL@EMSIPC.ONTYME, MICHAELB,
+	TERRYB, SRA, RICHARDSON, PKRUMV@F33, LELANDY@D35 
+
+F33/CCC APR:  1427 -- STOPCODE - CRASH
+DATE:  02-13-89   DOWN:  1412   ANS:  1424
+STOPCODE TYPE:  JOB   NAME:  EUE   M NUMBER:  02571
+LOADED P035/D11 FROM DISK.  SYSTEM CHOSE FAST DSKCLN AT 1415.
+MEMORY ONLINE: 2048K   BUSS MODE:  4   INTERLEAVE
+CRASH FILE:  CRA004
+
+   THE FOLLOWING IS THE CTY OUTPUT:
+   ?JOB STOPCODE "EUE"
+   FRAME 36 TTY100 CHALIT[30455,107741] AT F33
+   RUNNING (SYS)RPG[1,4]
+   UUO IS  000000,,320044 AT EXEC PC 1000044
+   MUUO IS 047040,,000012 AT EXEC PC 200755
+   RELOAD MONITOR.
+   SYSTEM BROUGHT ITELF UP.
+   
+
+FREMONT OPERATIONS...EZ
+Received: from F33.Tymnet.COM by D35.Tymnet.COM; Mon, 13 Feb 89 15:05:17 PST
+Return-path: <JMS@F74.Tymnet.COM> 
+From: Joe Smith <JMS@F74.Tymnet.COM> 
+Date: Mon, 13 Feb 89 14:59:03 PST 
+To: Monitor Group <JMS>, Carl, Osman 
+Cc: FletcherC 
+Subject: MSGLOG works - F33's crash is really TTYNNC and RCCDBG not EUE. 
+
+The following was extracted from MSGLOG:
+F33-P035/D11 13-Feb-1989 12:48:11 - Total of 31822 pages free on DSKB
+
+?INFO stopcode "TTYNNC" at 13-Feb-1989 14:12:35 
+F33, hardware CCC, KL-1427, base 2333, F33-P035/D11, 2-9-89, M02571
+[Continuing system]
+
+?INFO stopcode "RCCDBG" at 13-Feb-1989 14:12:35 
+F33, hardware CCC, KL-1427, base 2333, F33-P035/D11, 2-9-89, M02571
+TTY117:   T1: 100044   T2: 000000   LDB: 12300,,403026
+[Continuing system]
+
+?JOB stopcode "EUE" at 13-Feb-1989 14:12:40 
+F33, hardware CCC, KL-1427, base 2333, F33-P035/D11, 2-9-89, M02571
+Frame 36  TTY100  CHALIT[30455,107741] at F33
+Running (SYS)RPG[1,4]
+ UUO is 000000,,320044 at exec PC 100044
+MUUO is 047040,,000012 at exec PC 200755
+Reload monitor
+----------------------------------------------------
+13-Feb-1989 14:12:40 
+F33, hardware CCC, KL-1427, base 2333, F33-P035/D11, 2-9-89, M02571
+Received: from F26.Tymnet.COM by D35.Tymnet.COM; Mon, 13 Feb 89 15:44:18 PST
+Return-path: <OPER@F26.Tymnet.COM> 
+From: OPER@F26.Tymnet.COM 
+Date: Mon, 13 Feb 89 15:43:48 PST 
+To: OPER, BILLF, CARL, JMS, DANIELSR, OSMAN, IPC.S/PAL@EMSIPC.ONTYME, MICHAELB,
+	TERRYB, SRA, RICHARDSON, PKRUMV@F33, LELANDY@D35 
+
+F26/FFF APR:  1324 -- STOPCODE - CRASH
+DATE:  02-13-89   DOWN:  1442   ANS:  1534
+STOPCODE TYPE:  DISK   NAME:  RIBBRP   M NUMBER:  02569
+LOADED P035/D11 FROM DISK.  SYSTEM CHOSE FULL DSKCLN AT 1449.
+MEMORY ONLINE: 2048K   BUSS MODE:  4   INTERLEAVE
+CRASH FILE:  CRA010
+
+   THE FOLLOWING IS THE CTY OUTPUT:
+   ?DISK STOPCODE RIBBRP
+   FRAME 44 TTY203 MBETTY[44062,500355](VACODE)[46606,452120]) AT F26
+   RUNNING (SYS)DIRIT[1,4]
+   UUO IS 043040,,000447 AT USER PC 401021
+   FILE DSK:[46606,452120].UFD[1,1] ON DSKB6: PAGE 002200
+   RELOAD MONITOR
+   FULL DSKCLN REQUESTED.
+
+FREMONT OPERATIONS...EZ
+Received: from F74.Tymnet.COM by D35.Tymnet.COM; Mon, 13 Feb 89 23:26:12 PST
+Return-path: <OPER@F74.Tymnet.COM> 
+From: OPER@F74.Tymnet.COM 
+Date: Mon, 13 Feb 89 23:25:44 PST 
+To: OPER, BILLF, CARL, JMS, DANIELSR, OSMAN, IPC.S/PAL@EMSIPC.ONTYME, MICHAELB,
+	TERRYB, SRA, RICHARDSON, PKRUMV@F33, LELANDY@D35 
+
+F74/DDD APR:  1354 -- STOPCODE - CRASH
+DATE:  02-13-89   DOWN:  1520   ANS:  1623
+STOPCODE TYPE:  DEBUG   NAME:  SAT2ND   M NUMBER:  M02574
+LOADED P035/D11 FROM DISK.  OPERATOR FORCED FULL DSKCLN AT 1537.
+MEMORY ONLINE: 4096K   BUSS MODE:  4   INTERLEAVE
+CRASH FILE:  CRA005
+
+   ?DEBUG STOPCODE "SAT2ND"
+   FRAME 23  TTY156  OPER[1,21] AT F74
+   RUNNING ()SLVSUP[1,36]
+    UUO IS 043300,,000014 AT EXEC PC 100752
+   MUUO IS 056040,,000000 AT USER PC 000207
+   FILE DSK:()SPLCNT.[1,133677]
+   PREVIOUS TO CRASH SYSTEM WAS REPORTING INFO STOPCODES
+   WRTSAT, BADSAT AND EVENT STOPCODE RIBERR. RIBERRS MOSTLY ON
+   DSKB7 AND ALL IN USEU (USEVAL). AFTER FULL D/C SYSTEM REPORTED
+   FILES LOST DATA IN (USEVAL). ALL WERE .UFD - DURING DSKCLN
+   SYSTEM REPORTED HOLE PUNCHED IN RIB, ALL FILES WERE IN (USEVAL)
+   AND WERE .UFD
+
+FREMONT OPERATIONS...MS
+Received: from F74.Tymnet.COM by D35.Tymnet.COM; Mon, 13 Feb 89 23:43:44 PST
+Return-path: <OPER@F74.Tymnet.COM> 
+From: OPER@F74.Tymnet.COM 
+Date: 13 Feb 89 23:43:18 PST 
+To: OPER, BILLF, CARL, JMS, DANIELSR, OSMAN, IPC.S/PAL@EMSIPC.ONTYME, MICHAELB,
+	TERRYB, SRA, RICHARDSON, PKRUMV@F33, LELANDY@D35 
+
+F74/DDD APR:  1354 -- STOPCODE - CRASH
+DATE:  02-13-89   DOWN:  1627   ANS:  1836
+STOPCODE TYPE:  DISK   NAME:  UFDER1   M NUMBER:  M02574
+LOADED P035/D11 FROM DISK.  OPERATOR FORCED FULL DSKCLN AT 1752.
+MEMORY ONLINE: 4096K   BUSS MODE:  4   INTERLEAVE
+CRASH FILE:  NONE
+
+   ?DISK STOPCODE "UFDER1"
+   FRAME 1  DETTTY  SRA[1,215254] AT F74
+   RUNNING SRASYSDAT[1,215254]
+    UUO IS 043140,,000000 AT EXEC PC 100752
+   MUUO IS 043140,,000000 AT USER PC 031436
+   FILE DSK:(SRA)CTYLOG.FEB[1,215254]
+   ?INFO STOPCODE "WRTSAT" RECEIVED BEFORE CRASH.
+   DRIVE F2 SUSPECTED OF CAUSING PROBLEM. WE DECIDED TO COPY
+   IT OUT. CONTACTED SOFTWARE SUPPORT BEFORE DOING SO AND
+   THEY AGREED THAT WE HAD A HARDWARE PROBLEM AND TO PROCEED.
+   PACK 740007, DSKB7 COPIED FROM F2 TO B2. B2 ZFORMATTED
+   BEFORE COPY. BROUGHT SYSTEM THRU A FULL DSKCLN AFTER COPY.
+   SYSTEM CAME UP CLEAN WITH NO PROBLEMS. USER (USEVAL) HAD ALL
+   FILES INTACT, THIS IS THE USER THAT WAS WHERE PROBLEMS WERE
+   INDICATED ON LAST CRASH. FSC NEEDS TO THOROUGHLY CHECK
+   OUT DRIVE F2.
+
+Received: from F74.Tymnet.COM by D35.Tymnet.COM; Tue, 14 Feb 89 0:00:16 PST
+Return-path: <PERPOPER@F74.Tymnet> 
+Reply-to: SUBMIT 
+From: F74 Job Processor 
+Sender: PERPOPER@F74.Tymnet 
+Date: Tue, 14 Feb 89 8:00:07 UT 
+To: SYS 
+Subject: Req #104457 DSK:(SYS)REDSAT.SAV Abort-Time (0) 
+
+; Processed:  Req #104457  Running DSK:(SYS)REDSAT.SAV
+; Scheduled:  14-Feb-89 16:15:00
+; Actual run: 13-Feb-89 23:00:01
+;
+; Options:  Mail:Error Unique:Job
+; Limits:  Time 60  TRUs 0
+; Flags:   Run  Detach  Logout
+; Status:  Abort-Time (0)  at  14-Feb-89 00:00:06
+
+Received: from F74.Tymnet.COM by D35.Tymnet.COM; Tue, 14 Feb 89 1:01:26 PST
+Return-path: <PERPOPER@F74.Tymnet> 
+Reply-to: SUBMIT 
+From: F74 Job Processor 
+Sender: PERPOPER@F74.Tymnet 
+Date: Tue, 14 Feb 89 9:01:12 UT 
+To: SYS 
+Subject: Req #104457 DSK:(SYS)REDSAT.SAV Abort-Time (0) 
+
+; Processed:  Req #104457  Running DSK:(SYS)REDSAT.SAV
+; Scheduled:  14-Feb-89 16:15:00
+; Actual run: 14-Feb-89 00:00:08
+;
+; Options:  Mail:Error Unique:Job
+; Limits:  Time 60  TRUs 0
+; Flags:   Run  Detach  Logout
+; Status:  Abort-Time (0)  at  14-Feb-89 01:01:11
+
+Received: from F74.Tymnet.COM by D35.Tymnet.COM; Tue, 14 Feb 89 2:02:25 PST
+Return-path: <PERPOPER@F74.Tymnet> 
+Reply-to: SUBMIT 
+From: F74 Job Processor 
+Sender: PERPOPER@F74.Tymnet 
+Date: Tue, 14 Feb 89 10:02:13 UT 
+To: SYS 
+Subject: Req #104457 DSK:(SYS)REDSAT.SAV Abort-Time (0) 
+
+; Processed:  Req #104457  Running DSK:(SYS)REDSAT.SAV
+; Scheduled:  14-Feb-89 16:15:00
+; Actual run: 14-Feb-89 01:01:13
+;
+; Options:  Mail:Error Unique:Job
+; Limits:  Time 60  TRUs 0
+; Flags:   Run  Detach  Logout
+; Status:  Abort-Time (0)  at  14-Feb-89 02:02:13
+
+Received: from F74.Tymnet.COM by D35.Tymnet.COM; Tue, 14 Feb 89 2:35:21 PST
+Received: from tymix.Tymnet.COM by F74.Tymnet.COM; Tue, 14 Feb 89 2:35:09 PST
+Received: by tymix.Tymnet.COM (5.61/1.34) id AA15997; Tue, 14 Feb 89 02:28:25
+	-0800
+Return-path: <MAILER-DAEMON@tymix.Tymnet.COM> 
+From: MAILER-DAEMON@tymix.Tymnet.COM (Mail Delivery Subsystem) 
+Date: Tue, 14 Feb 89 02:28:25 -0800 
+To: <Carl@F35.Tymnet> 
+Message-id: <8902141028.AA15997@tymix.Tymnet.COM> 
+Subject: Returned mail: Cannot send message for 3 days 
+
+   ----- Transcript of session follows -----
+
+   ----- Unsent message follows -----
+Received: from D35.Tymnet.COM by tymix.Tymnet.COM (5.61/1.34)
+	id AA24268; Sat, 11 Feb 89 02:23:27 -0800
+Message-Id: <8902111023.AA24268@tymix.Tymnet.COM>
+From: Carl A Baltrunas <Carl@F35.Tymnet>
+Date: Sat, 11 Feb 89 2:17:00 PST 
+To: Ed Mulrean <mulrean%cuavax.dnet@netcon.cua.edu>
+Subject: Mail bounce 
+
+Hello Ed,
+  This is a test!  They've finally gotten our internet connection in
+place in St. Louis and I can receive internet mail again.
+
+  Feel free to forward this test back so I can see what you received.
+I don't know if it will like carl@D35.Tymnet.com or carl@F74.Tymnet.com
+as a response... or even carl@opus.Tymnet.com  or cbaltru@antares.Tymnet.com
+
+When our workstations are connected to the campus-wide ethernet here in
+San Jose, then I should be able to be reached as carl@doctor.tymnet.com
+but in the meantime, oe or all of the above addresses should reach me when
+the X.25 link between SanJose and StLouis is up..
+
+This message is sent from D35.Tymnet.com.
+
+/Carl
+Received: from F74.Tymnet.COM by D35.Tymnet.COM; Tue, 14 Feb 89 2:50:39 PST
+Return-path: <JMS@F74.Tymnet.COM> 
+From: JMS@F74.Tymnet.COM 
+Date: Tue, 14 Feb 89 2:49:14 PST 
+To: carl 
+
+Please restart (SYS)REDSAT 104457 on F74.  It is marked in the active
+area but is not running!  I tried to KILL it and REQUEUE it to no avail.
+Received: from F74.Tymnet.COM by D35.Tymnet.COM; Tue, 14 Feb 89 3:03:19 PST
+Return-path: <PERPOPER@F74.Tymnet> 
+Reply-to: SUBMIT 
+From: F74 Job Processor 
+Sender: PERPOPER@F74.Tymnet 
+Date: Tue, 14 Feb 89 11:03:09 UT 
+To: SYS 
+Subject: Req #104457 DSK:(SYS)REDSAT.SAV Abort-Time (0) 
+
+; Processed:  Req #104457  Running DSK:(SYS)REDSAT.SAV
+; Scheduled:  14-Feb-89 16:15:00
+; Actual run: 14-Feb-89 02:02:15
+;
+; Options:  Mail:Error Unique:Job
+; Limits:  Time 60  TRUs 0
+; Flags:   Run  Detach  Logout
+; Status:  Abort-Time (0)  at  14-Feb-89 03:03:08
+
+Received: from F74.Tymnet.COM by D35.Tymnet.COM; Tue, 14 Feb 89 3:49:17 PST
+Return-path: <PERPOPER@F74.Tymnet> 
+Reply-to: SUBMIT 
+From: F74 Job Processor 
+Sender: PERPOPER@F74.Tymnet 
+Date: Tue, 14 Feb 89 11:49:09 UT 
+To: SYS 
+Subject: Req #104457 DSK:(SYS)REDSAT.SAV Abort-Time (0) 
+
+; Processed:  Req #104457  Running DSK:(SYS)REDSAT.SAV
+; Scheduled:  14-Feb-89 16:15:00
+; Actual run: 14-Feb-89 02:48:15
+;
+; Options:  Mail:Error Unique:Job
+; Limits:  Time 60  TRUs 0
+; Flags:   Run  Detach  Logout
+; Status:  Abort-Time (0)  at  14-Feb-89 03:49:08
+
+Received: from F74.Tymnet.COM by D35.Tymnet.COM; Tue, 14 Feb 89 4:04:23 PST
+Return-path: <PERPOPER@F74.Tymnet> 
+Reply-to: SUBMIT 
+From: F74 Job Processor 
+Sender: PERPOPER@F74.Tymnet 
+Date: Tue, 14 Feb 89 12:04:11 UT 
+To: SYS 
+Subject: Req #104457 DSK:(SYS)REDSAT.SAV Abort-Time (0) 
+
+; Processed:  Req #104457  Running DSK:(SYS)REDSAT.SAV
+; Scheduled:  14-Feb-89 16:15:00
+; Actual run: 14-Feb-89 03:03:09
+;
+; Options:  Mail:Error Unique:Job
+; Limits:  Time 60  TRUs 0
+; Flags:   Run  Detach  Logout
+; Status:  Abort-Time (0)  at  14-Feb-89 04:04:10
+
+Received: from F74.Tymnet.COM by D35.Tymnet.COM; Tue, 14 Feb 89 4:50:18 PST
+Return-path: <PERPOPER@F74.Tymnet> 
+Reply-to: SUBMIT 
+From: F74 Job Processor 
+Sender: PERPOPER@F74.Tymnet 
+Date: Tue, 14 Feb 89 12:50:09 UT 
+To: SYS 
+Subject: Req #104457 DSK:(SYS)REDSAT.SAV Abort-Time (0) 
+
+; Processed:  Req #104457  Running DSK:(SYS)REDSAT.SAV
+; Scheduled:  14-Feb-89 16:15:00
+; Actual run: 14-Feb-89 03:49:09
+;
+; Options:  Mail:Error Unique:Job
+; Limits:  Time 60  TRUs 0
+; Flags:   Run  Detach  Logout
+; Status:  Abort-Time (0)  at  14-Feb-89 04:50:08
+
+Received: from F74.Tymnet.COM by D35.Tymnet.COM; Tue, 14 Feb 89 5:05:20 PST
+Return-path: <PERPOPER@F74.Tymnet> 
+Reply-to: SUBMIT 
+From: F74 Job Processor 
+Sender: PERPOPER@F74.Tymnet 
+Date: Tue, 14 Feb 89 13:05:09 UT 
+To: SYS 
+Subject: Req #104457 DSK:(SYS)REDSAT.SAV Abort-Time (0) 
+
+; Processed:  Req #104457  Running DSK:(SYS)REDSAT.SAV
+; Scheduled:  14-Feb-89 16:15:00
+; Actual run: 14-Feb-89 04:04:12
+;
+; Options:  Mail:Error Unique:Job
+; Limits:  Time 60  TRUs 0
+; Flags:   Run  Detach  Logout
+; Status:  Abort-Time (0)  at  14-Feb-89 05:05:09
+
+Received: from D37.Tymnet.COM by D35.Tymnet.COM; Tue, 14 Feb 89 5:09:15 PST
+Return-path: <OPER@D37.Tymnet.COM> 
+From: OPER@D37.Tymnet.COM 
+Date: Tue, 14 Feb 89 7:06:02 CST 
+To: OPER, SRA, MEYERG, JENGLISH, LELANDY, OSMAN, CARL, JMS, ZONE, SCRIBNER,
+	RODDAMJ, TYMRES5, PKRUMV@F33, DIAG10D 
+
+D37-HH/APR 1461/DOWN AT 01:01(CST) 02-14-89/SCHEDULED FOR MEMORY
+MAINT. AND SYSTEM P.M./SYSTEM AND MEM. MAINT. COMPLETE/UP AT 05:56(CST) 02-14-89/FULL DSKCLN/P035/D-7 MONITOR/4096K MEMORY ONLINE. THANK YOU, S.LANGLEY....DCO.
+Received: from F74.Tymnet.COM by D35.Tymnet.COM; Tue, 14 Feb 89 5:51:17 PST
+Return-path: <PERPOPER@F74.Tymnet> 
+Reply-to: SUBMIT 
+From: F74 Job Processor 
+Sender: PERPOPER@F74.Tymnet 
+Date: Tue, 14 Feb 89 13:51:09 UT 
+To: SYS 
+Subject: Req #104457 DSK:(SYS)REDSAT.SAV Abort-Time (0) 
+
+; Processed:  Req #104457  Running DSK:(SYS)REDSAT.SAV
+; Scheduled:  14-Feb-89 16:15:00
+; Actual run: 14-Feb-89 04:50:09
+;
+; Options:  Mail:Error Unique:Job
+; Limits:  Time 60  TRUs 0
+; Flags:   Run  Detach  Logout
+; Status:  Abort-Time (0)  at  14-Feb-89 05:51:09
+
+Received: from F74.Tymnet.COM by D35.Tymnet.COM; Tue, 14 Feb 89 6:06:17 PST
+Return-path: <PERPOPER@F74.Tymnet> 
+Reply-to: SUBMIT 
+From: F74 Job Processor 
+Sender: PERPOPER@F74.Tymnet 
+Date: Tue, 14 Feb 89 14:06:09 UT 
+To: SYS 
+Subject: Req #104457 DSK:(SYS)REDSAT.SAV Abort-Time (0) 
+
+; Processed:  Req #104457  Running DSK:(SYS)REDSAT.SAV
+; Scheduled:  14-Feb-89 16:15:00
+; Actual run: 14-Feb-89 05:05:10
+;
+; Options:  Mail:Error Unique:Job
+; Limits:  Time 60  TRUs 0
+; Flags:   Run  Detach  Logout
+; Status:  Abort-Time (0)  at  14-Feb-89 06:06:08
+
+Received: from F74.Tymnet.COM by D35.Tymnet.COM; Tue, 14 Feb 89 6:52:21 PST
+Return-path: <PERPOPER@F74.Tymnet> 
+Reply-to: SUBMIT 
+From: F74 Job Processor 
+Sender: PERPOPER@F74.Tymnet 
+Date: Tue, 14 Feb 89 14:52:09 UT 
+To: SYS 
+Subject: Req #104457 DSK:(SYS)REDSAT.SAV Abort-Time (0) 
+
+; Processed:  Req #104457  Running DSK:(SYS)REDSAT.SAV
+; Scheduled:  14-Feb-89 16:15:00
+; Actual run: 14-Feb-89 05:51:10
+;
+; Options:  Mail:Error Unique:Job
+; Limits:  Time 60  TRUs 0
+; Flags:   Run  Detach  Logout
+; Status:  Abort-Time (0)  at  14-Feb-89 06:52:08
+
+Received: from F74.Tymnet.COM by D35.Tymnet.COM; Tue, 14 Feb 89 7:07:21 PST
+Return-path: <PERPOPER@F74.Tymnet> 
+Reply-to: SUBMIT 
+From: F74 Job Processor 
+Sender: PERPOPER@F74.Tymnet 
+Date: Tue, 14 Feb 89 15:07:10 UT 
+To: SYS 
+Subject: Req #104457 DSK:(SYS)REDSAT.SAV Abort-Time (0) 
+
+; Processed:  Req #104457  Running DSK:(SYS)REDSAT.SAV
+; Scheduled:  14-Feb-89 16:15:00
+; Actual run: 14-Feb-89 06:06:09
+;
+; Options:  Mail:Error Unique:Job
+; Limits:  Time 60  TRUs 0
+; Flags:   Run  Detach  Logout
+; Status:  Abort-Time (0)  at  14-Feb-89 07:07:09
+
+Received: from F74.Tymnet.COM by D35.Tymnet.COM; Tue, 14 Feb 89 7:53:19 PST
+Return-path: <PERPOPER@F74.Tymnet> 
+Reply-to: SUBMIT 
+From: F74 Job Processor 
+Sender: PERPOPER@F74.Tymnet 
+Date: Tue, 14 Feb 89 15:53:10 UT 
+To: SYS 
+Subject: Req #104457 DSK:(SYS)REDSAT.SAV Abort-Time (0) 
+
+; Processed:  Req #104457  Running DSK:(SYS)REDSAT.SAV
+; Scheduled:  14-Feb-89 16:15:00
+; Actual run: 14-Feb-89 06:52:10
+;
+; Options:  Mail:Error Unique:Job
+; Limits:  Time 60  TRUs 0
+; Flags:   Run  Detach  Logout
+; Status:  Abort-Time (0)  at  14-Feb-89 07:53:10
+
+Received: from F74.Tymnet.COM by D35.Tymnet.COM; Tue, 14 Feb 89 8:08:20 PST
+Return-path: <PERPOPER@F74.Tymnet> 
+Reply-to: SUBMIT 
+From: F74 Job Processor 
+Sender: PERPOPER@F74.Tymnet 
+Date: Tue, 14 Feb 89 16:08:11 UT 
+To: SYS 
+Subject: Req #104457 DSK:(SYS)REDSAT.SAV Abort-Time (0) 
+
+; Processed:  Req #104457  Running DSK:(SYS)REDSAT.SAV
+; Scheduled:  14-Feb-89 16:15:00
+; Actual run: 14-Feb-89 07:07:11
+;
+; Options:  Mail:Error Unique:Job
+; Limits:  Time 60  TRUs 0
+; Flags:   Run  Detach  Logout
+; Status:  Abort-Time (0)  at  14-Feb-89 08:08:10
+
+Received: from F74.Tymnet.COM by D35.Tymnet.COM; Tue, 14 Feb 89 8:54:29 PST
+Return-path: <PERPOPER@F74.Tymnet> 
+Reply-to: SUBMIT 
+From: F74 Job Processor 
+Sender: PERPOPER@F74.Tymnet 
+Date: Tue, 14 Feb 89 16:54:14 UT 
+To: SYS 
+Subject: Req #104457 DSK:(SYS)REDSAT.SAV Abort-Time (0) 
+
+; Processed:  Req #104457  Running DSK:(SYS)REDSAT.SAV
+; Scheduled:  14-Feb-89 16:15:00
+; Actual run: 14-Feb-89 07:53:12
+;
+; Options:  Mail:Error Unique:Job
+; Limits:  Time 60  TRUs 0
+; Flags:   Run  Detach  Logout
+; Status:  Abort-Time (0)  at  14-Feb-89 08:54:12
+
+Received: from F74.Tymnet.COM by D35.Tymnet.COM; Tue, 14 Feb 89 9:09:27 PST
+Return-path: <PERPOPER@F74.Tymnet> 
+Reply-to: SUBMIT 
+From: F74 Job Processor 
+Sender: PERPOPER@F74.Tymnet 
+Date: Tue, 14 Feb 89 17:09:12 UT 
+To: SYS 
+Subject: Req #104457 DSK:(SYS)REDSAT.SAV Abort-Time (0) 
+
+; Processed:  Req #104457  Running DSK:(SYS)REDSAT.SAV
+; Scheduled:  14-Feb-89 16:15:00
+; Actual run: 14-Feb-89 08:08:11
+;
+; Options:  Mail:Error Unique:Job
+; Limits:  Time 60  TRUs 0
+; Flags:   Run  Detach  Logout
+; Status:  Abort-Time (0)  at  14-Feb-89 09:09:12
+
+Received: from F74.Tymnet.COM by D35.Tymnet.COM; Tue, 14 Feb 89 9:55:37 PST
+Return-path: <PERPOPER@F74.Tymnet> 
+Reply-to: SUBMIT 
+From: F74 Job Processor 
+Sender: PERPOPER@F74.Tymnet 
+Date: Tue, 14 Feb 89 17:55:13 UT 
+To: SYS 
+Subject: Req #104457 DSK:(SYS)REDSAT.SAV Abort-Time (0) 
+
+; Processed:  Req #104457  Running DSK:(SYS)REDSAT.SAV
+; Scheduled:  14-Feb-89 16:15:00
+; Actual run: 14-Feb-89 08:54:14
+;
+; Options:  Mail:Error Unique:Job
+; Limits:  Time 60  TRUs 0
+; Flags:   Run  Detach  Logout
+; Status:  Abort-Time (0)  at  14-Feb-89 09:55:13
+
+Received: from F74.Tymnet.COM by D35.Tymnet.COM; Tue, 14 Feb 89 11:40:41 PST
+Return-path: <DANIELSR@F74.Tymnet.COM> 
+From: DANIELSR@F74.Tymnet.COM 
+Date: Tue, 14 Feb 89 11:39:08 PST 
+To: OSMAN, CARL, JMS, DANIELSR, OPER 
+
+
+Please run FNDBAD on this system.  You will find the following:
+
+[6,14422].UFD(USEVAL)
+
+Would you look into it and see if it needs anything done with it?
+
+Thanks Rick
+Received: from D37.Tymnet.COM by D35.Tymnet.COM; Tue, 14 Feb 89 13:13:30 PST
+Return-path: <OPER@D37.Tymnet.COM> 
+From: OPER@D37.Tymnet.COM 
+Date: Tue, 14 Feb 89 15:06:40 CST 
+To: OPER, SRA, MEYERG, JENGLISH, LELANDY, OSMAN, CARL, JMS, ZONE, SCRIBNER,
+	RODDAMJ, TYMRES5, PKRUMV@F33, DIAG10D 
+
+D37-KL/HH/APR1461/BEGAN RECEIVING NUMEROUS HUNG DEVICE MSGS FROM VARIOUS
+DASDS/WE ALSO RCVD NUMEROUS STOPCODE MSGS OF: WRTSAT, RIBHRE, REDSAT, AND
+BADPAG ON CTTY - FULL DSKCLN REQUESTED/SYSTEM WAS TAKEN DOWN VIA DEPOSIT
+IN LOC 30 AT 14:03 (CST)/MAINT RESET THE HUNG DEVICE- BPA7/FULL DSKCLN AT
+...CORRECTION...///SYSTEM DOWN AT 13:47 (CST)/FULL DSKCLN AT 14:03/SYSTEM
+UP AT 14:49/4096K/P035,D-7 MONITOR/JZ/SH/SB/*BNASH*/
+Received: from F22.Tymnet.COM by D35.Tymnet.COM; Tue, 14 Feb 89 14:24:58 PST
+Return-path: <JMS@F22.Tymnet.COM> 
+From: JMS@F22.Tymnet.COM 
+Date: Tue, 14 Feb 89 14:23:50 PST 
+To: carl 
+
+Please make FNDBAD 19355 run on F22.  It is in the queue twice.
+From: Carl A Baltrunas <Carl@F35.Tymnet> 
+Date: Tue, 14 Feb 89 14:27:05 PST 
+To: jms 
+Subject: FNDBAD on F22 
+
+I'll look at it...
+  did you kill/cancel/delete REDSAT on F74.  I wasn't sure what it was
+supposed to do, and I couldn't find the source on 33 or 74, so I didn't
+touch it.  I have lots of mail messages, 2 per hour from F74 about this!
+
+/Carl
+Received: from F74.Tymnet.COM by D35.Tymnet.COM; Tue, 14 Feb 89 14:37:27 PST
+Return-path: <JMS@F74.Tymnet.COM> 
+From: Joe Smith <JMS@F74.Tymnet.COM> 
+Date: Tue, 14 Feb 89 14:30:10 PST 
+To: <Carl@F35.Tymnet> 
+Subject: Re: FNDBAD on F22 
+In-reply-to: your message of Tue, 14 Feb 89 14:27:05 PST
+
+I was unable to cancel the original request - it is still in the queue.
+The job is to run (SYS)REDSAT.SAV at 16:15 with no log.  The messages were
+a result of XEXEC being convinced that the REDSAT job was active even
+though no job was logged in as (SYS) at the time.  An hour later, it would
+decide that the job had exceeced its time limit, send mail to SYS (which
+gets forwarded to us), then rerun the job.  For some strange reason it
+thought it had a sub job running, even though it did not log in a new job
+and did not graft an existing job.  I have no idea as to what caused it
+to finally go to "abort-time" and stay there like it should have in the
+first place.  Another case of "the request that would not die".   /Joe
+
+p.s. it looks like your TUMS.INI says F35 instead of D35, no .COM
+From: Carl A Baltrunas <Carl@F35.Tymnet> 
+Date: Tue, 14 Feb 89 14:38:35 PST 
+To: jms 
+Subject: re: TUMS.INI 
+
+I haven't changed it yet... F35?  must have been brain-dead.
+/Carl
+Received: from F33.Tymnet.COM by D35.Tymnet.COM; Tue, 14 Feb 89 23:54:36 PST
+Return-path: <OPER@F33.Tymnet.COM> 
+From: OPER@F33.Tymnet.COM 
+Date: Tue, 14 Feb 89 23:53:49 PST 
+To: OPER, BILLF, CARL, JMS, DANIELSR, OSMAN, IPC.S/PAL@EMSIPC.ONTYME, MICHAELB,
+	TERRYB, SRA, RICHARDSON, PKRUMV@F33, LELANDY@D35 
+
+F33/CCC APR:  1427 - PREVENTATIVE MAINTENANCE
+SCHEDULED DOWN - 02/14/89 1800
+            UP - 02/14/89 2400
+
+   ACTUAL DOWN - 02/14/89 1809
+      ANSWERED - 02/14/89 2339
+
+LOADED P035/D11 FROM DISK.  OPERATOR FORCED FULL DSKCLN AT 2232.
+MEMORY ONLINE: 2048K   BUSS:  4   INTERLEAVE
+   FSC DSF'D UNIT 345 ON DRIVE F1. THERE WAS STILL PLENTY OF TIME
+   LEFT SO WE ZFORMATTED UNITS 305 & 345. BOTH ZFORMATTED FINE.
+   THIS DRIVE HAS NOW BEEN THOROUGHLY CHECKED OUT AND IS READY
+   FOR  PACK ADD. SLAP TAG ON DRIVE HAS BEEN MARKED AS SUCH.
+
+FREMONT OPERATIONS...MS
+Received: from F38.Tymnet.COM by D35.Tymnet.COM; Wed, 15 Feb 89 3:03:53 PST
+Return-path: <OPER@F38.Tymnet.COM> 
+From: OPER@F38.Tymnet.COM 
+Date: Wed, 15 Feb 89 3:03:33 PST 
+To: OPER, BILLF, CARL, JMS, DANIELSR, OSMAN, IPC.S/PAL@EMSIPC.ONTYME, MICHAELB,
+	TERRYB, SRA, RICHARDSON, PKRUMV@F33, LELANDY@D35 
+
+F38/AAA APR:  1405 - ASP DUMP
+SCHEDULED DOWN - 02/14/89 2100
+            UP - 02/15/89 0300
+
+   ACTUAL DOWN - 02/14/89 2100
+      ANSWERED - 02/15/89 0238
+
+NO DSKCLN WAS RUN BEFORE DUMP.
+   G O O D  D U M P
+SET USED: 1   NUMBER OF TAPES USED: 38
+
+LOADED P035/D11 FROM DISK.  SYSTEM CHOSE FAST DSKCLN AT 0218.
+FREMONT OPERATIONS...RKUCERA
+Received: from F33.Tymnet.COM by D35.Tymnet.COM; Wed, 15 Feb 89 11:09:18 PST
+Return-path: <PKrumv@F33.Tymnet.COM> 
+From: Paul Krumviede <PKrumv@F33.Tymnet.COM> 
+Date: Wed, 15 Feb 89 11:07:43 PST 
+To: carl@d35 
+Subject: SYSDAT 
+
+Carl,
+  SYSDAT on F33 wasn't running, and the SUBMIT entry showed it aborted.
+I tried "rerun" in SUBMIT, which has it queued to run on next startup,
+but wasn't sure how to start it now...
+	paul
+Received: from F74.Tymnet.COM by D35.Tymnet.COM; Wed, 15 Feb 89 22:36:55 PST
+Return-path: <OSMAN@F74> 
+From: Osman Guven <OSMAN@F74> 
+Date: Wed, 15 Feb 89 22:35:10 PST 
+To: Carl Baltrunas <Carl@F74>, jms 
+Subject: FYI .. 
+
+Here is copy of mail I sent to Bill Sturm.
+
+===========================================
+Bill ..
+
+	My trip to Irvine last week was more productive than I expected.
+I am glad we got to meet each other and had a chance to talk.  In the
+future I hope to get acquainted with the people who work for you. I am
+very much interested in learning more about what you do and your plans
+for the M&E and SUN project.  See you here Wednesday.
+
+-Osman-
+
+P.S.	Here is the summary of our brainstorming session.
+
+				-1-
+
+
+							       10 February 1989
+
+Brainstorming sesion:
+	Bill  Sturm
+	Craig Fletcher
+	Osman Guven
+
+
+
+
+		M A I N T E N A N C E   S T R A T E G Y 
+		=======================================
+
+
+F S C O
+-------
+	o  Changing technology requires it.
+	o  We have to support it for FE anyway.
+	o  Consistent with our horizontal service methodology.
+	o  Sell the S/W at the same time with H/W sale, including
+	   maintenance and warranty.  Service forever.
+	o  Move the H/W and S/W dividing line out a layer.
+	o  Expand focus from shrinking maintanence revenue to include
+	   software offering.
+	o  Offer different software option; installation, patching.
+	o  MDFSCO can do it better than SUN.
+	o  It fits our growth path.
+	o  We support MDC products, better for all.
+
+M D C
+-----
+	o  Make money internally.
+	o  Single O/S support group.
+	o  Customer money all goes to MDC.
+	o  Maintenance margin goes up by riding MDC market potential.
+	o  Control future System Integration.
+	o  Reduce cost of sale for FSCO.
+	o  May leverage our support for sale.
+				-2-
+
+
+
+
+S H O R T - T E R M - G O A L
+-----------------------------
+	o  Sell the H/W maintenance at the sale of hardware;
+		a)  Service with warranty.
+		b)  Install it.
+		c)  Maintain it.
+	o  Offer better service than SUN.
+
+L O N G - T E R M - G O A L
+---------------------------
+	o  Sell the S/W(Bundled O/S) support once; at the same
+	   time as H/W sale, including maintenance and warranty.
+	o  Package options to suit customer`s need.
+	o  Sole H/W and System S/W source service.
+	o  H/W and S/W single coordinated source.
+	o  Expand service offered to customer base.
+				-3-
+
+
+
+
+R E Q U I R E M E N T S
+-----------------------
+	o  Sell all the ISC components this idea.
+	o  Mandatory sole source agreement with ISC components.
+	o  Marketing agreement; commission, etc.
+	o  Field Operation and Technical Operation.
+	   must communicate better passing the knowledge.
+	o  Single coordinated H/W and S/W support(same source).
+	   Cooperative relationship with all parties.
+	o  Remote serviceability = $$.
+	o  Take adventage of "Laptop".
+		a)  Online FE support.
+		b)  Online symptom solution.
+	o  Must have H/W and S/W resources available.
+		a)  Update service and archive.
+		b)  Past, present, future software version.
+		c)  Documentation rights.
+	o  Up to date training.
+	o  Development for "Expert System".
+	o  Look/Find a microcosm for a test bad.
+	o  Do it right = Keep customer.
+Received: from D31.Tymnet.COM by D35.Tymnet.COM; Thu, 16 Feb 89 2:08:41 PST
+Return-path: <OPER@D31.Tymnet.COM> 
+From: OPER@D31.Tymnet.COM 
+Date: Thu, 16 Feb 89 4:04:58 CST 
+To: OPER, SRA, MEYERG, JENGLISH, LELANDY, OSMAN, CARL, JMS, ZONE, SCRIBNER,
+	RODDAMJ, TYMRES5, PKRUMV@F33, DIAG10D 
+
+D31-YY/APR 1415/DOWN AT 01:01(CST) 02-16-89/SCHEDULED FOR P.M./
+FSC P.M.'ED KL10, SA10, TRM-10, AND NODE 7004.  RAN DIAGS, REPLACED
+MEMORY BUFFER BOARD IN SLOT 14.  RAN FULL PASS OF DIAGS OK.  RELOADED
+NODE 7004 TO COMPLETE MS UPGRADE TO NODE 4261. UP AT 04:00(CST)
+02-16-89/FAST DSKCLN/P035/D-7 MONITOR/2048K MEMORY ONLINE. THX, SL
+Received: from D54.Tymnet.COM by D35.Tymnet.COM; Thu, 16 Feb 89 4:04:34 PST
+Return-path: <OPER@D54.Tymnet.COM> 
+From: OPER@D54.Tymnet.COM 
+Date: Thu, 16 Feb 89 6:02:56 CST 
+To: OPER, SRA, MEYERG, JENGLISH, LELANDY, OSMAN, CARL, JMS, ZONE, SCRIBNER,
+	RODDAMJ, TYMRES5, PKRUMV@F33, DIAG10D 
+
+D54-II/APR 1376/DOWN AT 02:01(CST) 02-16-89/SCHEDULED FOR ASP/
+ASP SET B COMPLETE AND VERIFIED/UP AT 05:00(CST) 02-16-89/P035/D-7
+MONITOR/4096K MEMORY ONLINE/THANK YOU, SL....DCO.
+Received: from EMSTXS.Ontyme.Tymnet by D35.Tymnet.COM; Thu, 16 Feb 89 14:01:52
+	PST
+Received: from F74.Tymnet by EMSTUMS.Ontyme.Tymnet; Wed, 15 Feb 89 14:04:42 PST
+Received: from D35.Tymnet.COM by F74.Tymnet.COM; Wed, 15 Feb 89 14:04:18 PST
+Received: from EMSFSC.Ontyme.Tymnet by D35.Tymnet.COM; Wed, 15 Feb 89 14:04:01
+	PST
+Return-path: <FSC.K/OKEY@EMSFSC.Ontyme.Tymnet> 
+From: FSC.K/OKEY@EMSFSC.Ontyme.Tymnet 
+Date: 15 FEB 89 10:38:25 
+To: FSC.C/BALTRUNAS@EMSFSC.Ontyme.Tymnet 
+Message-id: P18927@Ontyme.Tymnet 
+Subject: OPEN HOUSE INFORMATIVE/DISCUSSION 
+OpenHouseInformative/Discussion: 
+
+             MCDONNELL DOUGLAS FIELD SERVICE COMPANY
+ 
+ 
+                            MEMORANDUM
+ 
+ TO:            C. Baltrunas, O. Guven, J. Smith, Ralph Drury,
+                Renee McNeil, C. Fletcher, L. Claytor, R. Ferguson
+                Field Engineers.
+ 
+ FROM:          Bill Wu
+ 
+ DATE:          February 14, 1989
+ 
+ SUBJECT:       Open House Informative/Discussion
+ 
+ _________________________________________________________________
+ 
+ March 17, 1989 is the planned date for building D to participate
+ in an Open House.  To support this open house, I would like 
+ all of you to come to the meeting on:
+ 
+           DATE:     February 16, 1989
+           TIME:     11:00 AM
+           PLACE:    D2-600 Conference Room
+ 
+ I hope you all can make this meeting.
+Received: from D25.Tymnet.COM by D35.Tymnet.COM; Fri, 17 Feb 89 3:17:52 PST
+Return-path: <OPER@D25.Tymnet.COM> 
+From: OPER@D25.Tymnet.COM 
+Date: Fri, 17 Feb 89 5:15:33 CST 
+To: OPER, SRA, MEYERG, JENGLISH, LELANDY, OSMAN, CARL, JMS, ZONE, SCRIBNER,
+	RODDAMJ, TYMRES5, PKRUMV@F33, DIAG10D 
+
+D25-GG/APR 1460/DOWN AT 01:04(CST) 02-17-89/
+SCHEDULED FOR ASP-ASP SET B, COMPLETE AND VERIFIED/
+UP AT 04:51(CST) 02-17-89/AFTER FSC REPLC'D 5
+SINGLE BIT MEMORY ERRORS AND TESTED/FULL DSKCLN/
+P035/D-7 MONITOR/2048K MEMORY ONLINE/THX, SL..DCO.
+Received: from F30.Tymnet.COM by D35.Tymnet.COM; Fri, 17 Feb 89 4:07:00 PST
+Return-path: <OPER@F30.Tymnet.COM> 
+From: OPER@F30.Tymnet.COM 
+Date: Fri, 17 Feb 89 4:06:41 PST 
+To: OPER, BILLF, CARL, JMS, DANIELSR, OSMAN, IPC.S/PAL@EMSIPC.ONTYME, MICHAELB,
+	TERRYB, SRA, RICHARDSON, PKRUMV@F33, LELANDY@D35 
+
+F30/BBB APR:  1388 - ASP DUMP
+SCHEDULED DOWN - 02/17/89 0000
+            UP - 02/17/89 0330
+
+   ACTUAL DOWN - 02/17/89 0000
+      ANSWERED - 02/17/89 0316
+
+NO DSKCLN WAS RUN BEFORE DUMP.
+   G O O D  D U M P
+SET USED: 2   NUMBER OF TAPES USED: 25
+
+LOADED P035/D11 FROM DISK.  SYSTEM CHOSE FAST DSKCLN AT 0309.
+FREMONT OPERATIONS...WILKEC
+Received: from F74.Tymnet.COM by D35.Tymnet.COM; Fri, 17 Feb 89 15:51:55 PST
+Return-path: <OPER@F74.Tymnet.COM> 
+From: OPER@F74.Tymnet.COM 
+Date: Fri, 17 Feb 89 15:46:21 PST 
+To: OPER, BILLF, CARL, JMS, DANIELSR, OSMAN, IPC.S/PAL@EMSIPC.ONTYME, MICHAELB,
+	TERRYB, SRA, RICHARDSON, PKRUMV@F33, LELANDY@D35 
+
+F74/DDD 1 HDEV ERR DISK DR "A" BPA3(740002)
+
+OPERATIONS/L.T.SMITH
+Received: from F74.Tymnet.COM by D35.Tymnet.COM; Fri, 17 Feb 89 21:16:00 PST
+Return-path: <OPER@F74.Tymnet.COM> 
+From: OPER@F74.Tymnet.COM 
+Date: Fri, 17 Feb 89 21:15:39 PST 
+To: OPER, BILLF, CARL, JMS, DANIELSR, OSMAN, IPC.S/PAL@EMSIPC.ONTYME, MICHAELB,
+	TERRYB, SRA, RICHARDSON, PKRUMV@F33, LELANDY@D35 
+
+F74/DDD APR:  1354 - PREVENTATIVE MAINTENANCE
+SCHEDULED DOWN - 02/17/89 16:00
+            UP - 02/17/89 21:00
+
+   ACTUAL DOWN - 02/17/89 16:27
+      ANSWERED - 02/17/89 21:04
+
+LOADED P035/D11 FROM DISK.  SYSTEM CHOSE FAST DSKCLN AT 20:57.
+MEMORY ONLINE: 4096K   BUSS:  4   INTERLEAVE
+   CHANGE ADDRESS BETWEEN B2 AND F2 BACK TO NORMAL.
+   DRIVE F2 REPLACE READ/WRITE MODULE.ADJUST SERVO.
+   RAN DIAGNOSTICS. RAN DSF,ALSO Z FORMAT.
+   
+
+FREMONT OPERATIONS...JOSORIO
+Received: from D23.Tymnet.COM by D35.Tymnet.COM; Fri, 17 Feb 89 23:34:30 PST
+Return-path: <OPER@D23.Tymnet.COM> 
+From: OPER@D23.Tymnet.COM 
+Date: Sat, 18 Feb 89 1:32:43 CST 
+To: OPER, SRA, MEYERG, JENGLISH, LELANDY, OSMAN, CARL, JMS, ZONE, SCRIBNER,
+	RODDAMJ, TYMRES5, PKRUMV@F33, DIAG10D 
+
+D23-OO/APR 1275/DOWN AT 22:28(CST) 02-17-89/SCHEDULED FOR ASP/
+ASP SET A COMPLETE AND VERIFIED/UP AT 01:29(CST) 02-18-89/FULL
+DSKCLN/P035/D10 MONITOR/2048K MEMORY ONLINE/THX, SL...DCO.
+
+Received: from F33.Tymnet.COM by D35.Tymnet.COM; Sat, 18 Feb 89 11:22:08 PST
+Return-path: <JMS@F74.Tymnet.COM> 
+From: Joe Smith <JMS@F74.Tymnet.COM> 
+Date: Sat, 18 Feb 89 11:21:33 PST 
+To: Monitor Group <JMS>, Carl, Osman 
+Cc: FletcherC 
+Subject: Saturday morning hotline call 
+
+18-Feb-89 05:57 /Joe (800)678-3399 incident #16
+Contact:  Fremont Operations (415)498-2588, Rick Daniels
+Problem:  After an Add-Pack operation, DSKCLN dies with Illegal Memory
+          Reference for location 016332, at user PC 003613.
+Diagnosis: 26 units of 3652 disk with 13 SATs per disk times 3 tables
+          is more than 256K.  Removed DSKB31 so DSKCLN could run.
+FSR: 246-1490-57     Phone fix - Console dial-in
+
+Received: from F33.Tymnet.COM by D35.Tymnet.COM; Sat, 18 Feb 89 14:06:50 PST
+Return-path: <OPER@F33.Tymnet.COM> 
+From: OPER@F33.Tymnet.COM 
+Date: Sat, 18 Feb 89 14:06:22 PST 
+To: OPER, BILLF, CARL, JMS, DANIELSR, OSMAN, IPC.S/PAL@EMSIPC.ONTYME, MICHAELB,
+	TERRYB, SRA, RICHARDSON, PKRUMV@F33, LELANDY@D35 
+
+F33/CCC APR:  1427 - SPECIAL
+SCHEDULED DOWN - 2/17/89 2300
+            UP - 2/18/89 0900
+
+   ACTUAL DOWN - 2/17/89 2300
+      ANSWERED - 02/18/89 1110
+
+LOADED P035/D11 FROM DISK.  NO DSKCLN WAS RUN.
+MEMORY ONLINE: 2 MEG   BUSS:  4   INTERLEAVE
+   SYSTEM 33 SCHEDULED DOWN FOR ASP AND PACK
+   ADD ASP DUMP WAS GOOD . THE PACK
+   ADD HAD PROBLEMS JOE SMITH CAME IN TO WORK
+   ON SYSTEM SYSTEM UP ON HALF A PACK ALSO
+   TAPE DRIVE FTA3 WAS ADD INTO THE MONITOR
+   SO WE CAN ACCESS FTA3 NOW.
+
+FREMONT OPERATIONS...LTSMITH
+Received: from F33.Tymnet.COM by D35.Tymnet.COM; Sat, 18 Feb 89 19:58:03 PST
+Return-path: <JMS@F74.Tymnet.COM> 
+From: Joe Smith <JMS@F74.Tymnet.COM> 
+Date: Sat, 18 Feb 89 19:49:27 PST 
+To: Bill Fischer <IPC.B/Fischer@Ontyme>, Rick Daniels <IPC.R/Daniels@Ontyme>,
+	Ed Roop <IPC.E/Roop@Ontyme>, Ed Barens <IPC.E/Barens@Ontyme>, Jim
+	English <IPC.J/English@Ontyme>, Leland Yarbrough
+	<IPC.L/Yarbrough@Ontyme>, Jim Zone <IPC.J/Zone@Ontyme>, John Roddam
+	<IPC.J/Roddam@Ontyme> 
+Cc: Monitor Group <JMS>, Carl, Osman, FletcherC 
+Subject: The maximum size of DSKB is 3 million pages. 
+
+When the Fremont Operations attempted to add a 26th pack to F33, it exposed
+a previously unknown limitation on the size of DSKB.  The DSKCLN program
+cannot run if DSKB is bigger than 3,000,000 pages is size.  The maximum
+number of units are:
+
+Memorex 3675 (200 Mb/spindle) = 39 units.
+Memorex 3650 (300 Mb/spindle) = 25 units.
+Memorex 3652 (600 Mb/spindle) = 12.5 drives = 25 logical units.
+
+F33 is currently using only the BPA5 half of BPA5/BPC5; the BPC5 half is
+marked as SPARE and is not part of DSKB.
+
+			Joe Smith
+			PDP-10 Support Group
+Received: from F74.Tymnet.COM by D35.Tymnet.COM; Sat, 18 Feb 89 20:13:52 PST
+Return-path: <OPER@F74.Tymnet.COM> 
+From: OPER@F74.Tymnet.COM 
+Date: Sat, 18 Feb 89 20:13:31 PST 
+To: OPER, BILLF, CARL, JMS, DANIELSR, OSMAN, IPC.S/PAL@EMSIPC.ONTYME, MICHAELB,
+	TERRYB, SRA, RICHARDSON, PKRUMV@F33, LELANDY@D35 
+
+F74/DDD APR:  1354 - ASP DUMP
+SCHEDULED DOWN - 02/18/89 16:00
+            UP - 02/18/89 21:00
+
+   ACTUAL DOWN - 02/18/89 16:05
+      ANSWERED - 02/18/89 19:52
+
+NO DSKCLN WAS RUN BEFORE DUMP.
+   G O O D  D U M P
+SET USED: 1   NUMBER OF TAPES USED: 33
+
+LOADED P035/D11 FROM DISK.  SYSTEM CHOSE FAST DSKCLN AT 19:44.
+FREMONT OPERATIONS...JOSORIO
+Received: from D34.Tymnet.COM by D35.Tymnet.COM; Sat, 18 Feb 89 20:54:05 PST
+Return-path: <OPER@D34.Tymnet.COM> 
+From: OPER@D34.Tymnet.COM 
+Date: Sat, 18 Feb 89 22:50:42 CST 
+To: OPER, SRA, MEYERG, JENGLISH, LELANDY, OSMAN, CARL, JMS, ZONE, SCRIBNER,
+	RODDAMJ, TYMRES5, PKRUMV@F33, DIAG10D 
+
+D34-ZZ/APR 1286/SYSTEM DOWN AT 20:02 (CST) ON 02-18-89
+FOR ASP (SET A)/ASP AND VERIFY COMPLETED SUCCESSFULLY/
+SYSTEM UP AT 22:46 (CST) ON 02-18-89/FULL DSISKCLEAN/
+2048K MEMORY ONLINE/PAM RUNNING/MONITOR D-8/THANK YOU,
+DAN GILBERT/DALLAS OPERATIONS.
+Received: from F26.Tymnet.COM by D35.Tymnet.COM; Sat, 18 Feb 89 22:09:52 PST
+Return-path: <OPER@F26.Tymnet.COM> 
+From: OPER@F26.Tymnet.COM 
+Date: Sat, 18 Feb 89 22:09:27 PST 
+To: OPER, BILLF, CARL, JMS, DANIELSR, OSMAN, IPC.S/PAL@EMSIPC.ONTYME, MICHAELB,
+	TERRYB, SRA, RICHARDSON, PKRUMV@F33, LELANDY@D35 
+
+F26/FFF APR:  1324 - ASP DUMP
+SCHEDULED DOWN - 02/18/89 18:00
+            UP - 02/18/89 22:30
+
+   ACTUAL DOWN - 02/18/89 18:04
+      ANSWERED - 02/18/89 22:00
+
+NO DSKCLN WAS RUN BEFORE DUMP.
+   G O O D  D U M P
+SET USED: 1   NUMBER OF TAPES USED: 29
+
+LOADED P035/D11 FROM DISK.  SYSTEM CHOSE FAST DSKCLN AT 21:55.
+   TAPES FROM 4 TO 10 WRITTEN OVER DUE TO DATA WRITE ERRORS WHEN 
+   VERIFYING. TAPES ARE NEW ,DRIVES WERE CLEAN .
+   
+   
+
+FREMONT OPERATIONS...JOSORIO
+Received: from D37.Tymnet.COM by D35.Tymnet.COM; Sun, 19 Feb 89 0:38:02 PST
+Return-path: <OPER@D37.Tymnet.COM> 
+From: OPER@D37.Tymnet.COM 
+Date: Sun, 19 Feb 89 2:36:00 CST 
+To: OPER, SRA, MEYERG, JENGLISH, LELANDY, OSMAN, CARL, JMS, ZONE, SCRIBNER,
+	RODDAMJ, TYMRES5, PKRUMV@F33, DIAG10D 
+
+D37-HH/APR-1461/DOWN AT 2204(CST) ON SATURDAY 18-FEB-89/ASP SCHEDULED/
+ASP SAVE & VERIFY COMPLETED SUCCESSFULLY/FULL DSKCLN/UP AT 0227 ON SUNDAY 19-FEB-89/THANK YOU, DALLAS OPS(GEW)
+Received: from D37.Tymnet.COM by D35.Tymnet.COM; Sun, 19 Feb 89 0:53:43 PST
+Return-path: <OPER@D37.Tymnet.COM> 
+From: OPER@D37.Tymnet.COM 
+Date: Sun, 19 Feb 89 2:52:09 CST 
+To: OPER, SRA, MEYERG, JENGLISH, LELANDY, OSMAN, CARL, JMS, ZONE, SCRIBNER,
+	RODDAMJ, TYMRES5, PKRUMV@F33, DIAG10D 
+
+D37-HH/APR-1461/DOWN AT 2204(CST) ON SATURDAY 18-FEV-89/ASP SCHEDULED/
+ASP SAVE & VERIFY COMPLETED SUCCESSFULLY/FULL DSKCLN/UP AT 0227 ON
+SUNDAY 19-FEB-89/THANK YOU, DALLAS OPS(GEW)
+Received: from D37.Tymnet.COM by D35.Tymnet.COM; Sun, 19 Feb 89 4:09:15 PST
+Return-path: <OPER@D37.Tymnet.COM> 
+From: OPER@D37.Tymnet.COM 
+Date: Sun, 19 Feb 89 6:06:38 CST 
+To: OPER, SRA, MEYERG, JENGLISH, LELANDY, OSMAN, CARL, JMS, ZONE, SCRIBNER,
+	RODDAMJ, TYMRES5, PKRUMV@F33, DIAG10D 
+
+D37-HH/APR-1461/DOWN AT 0534 (CST) ON SUNDAY 19-FEB-89/STOPCODE 
+"SAXMM1"/FSC NOTIFIED/FAST DSKCLN/CRASH SAVED ON CRA004/THANK 
+YOU, DALLAS OPS(GEW)
+From: OPER@D35.Tymnet.COM 
+Date: Sun, 19 Feb 89 6:10:50 CST 
+To: OPER, SRA, MEYERG, JENGLISH, LELANDY, OSMAN, CARL, JMS, ZONE, SCRIBNER,
+	RODDAMJ, TYMRES5, PKRUMV@F33, DIAG10D 
+
+D35-QQ/APR-1096/DOWN AT 0406(CST) ON SUNDAY 19-FEB-89/ASP    
+SCHEDULED/ASP SAVE & VERIFY COMPLETED SUCCESSFULLY/FULL DSKCLN/
+THANK YOU, DALLAS OPS(GEW)
+Received: from D37.Tymnet.COM by D35.Tymnet.COM; Sun, 19 Feb 89 4:14:30 PST
+Return-path: <OPER@D37.Tymnet.COM> 
+From: OPER@D37.Tymnet.COM 
+Date: Sun, 19 Feb 89 6:13:08 CST 
+To: OPER, SRA, MEYERG, JENGLISH, LELANDY, OSMAN, CARL, JMS, ZONE, SCRIBNER,
+	RODDAMJ, TYMRES5, PKRUMV@F33, DIAG10D 
+
+D37-HH/APR-1461/DOWN AT 0534(CST) ON SUNDAY 19-FEB-89/STOPCODE
+"SAXMM1"/FSC NOTIFIED/FAST DSKCLN/CRASH SAVED ON CRA004/UP AT 0602
+ON 19-FEB-89/THANK YOU, DALLAS OPS(GEW)
+Received: from D56.Tymnet.COM by D35.Tymnet.COM; Sun, 19 Feb 89 4:20:11 PST
+Return-path: <OPER@D56.Tymnet.COM> 
+From: OPER@D56.Tymnet.COM 
+Date: Sun, 19 Feb 89 5:02:33 CST 
+To: OPER, SRA, MEYERG, JENGLISH, LELANDY, OSMAN, CARL, JMS, ZONE, SCRIBNER,
+	RODDAMJ, TYMRES5, PKRUMV@F33, DIAG10D 
+
+D56-JJ/APR-1383/DOWN AT 0204(CST) ON SUNDAY 19-FEB-89/ASP SCHEDULED/
+ASP SAVE & VERIFY COMPLETED SUCCESSFULLY/FULL DSKCLN/UP AT 0458 ON
+SUNDAY 19-FEB-89/THANK YOU, DALLAS OPS(GEW)
+Received: from D31.Tymnet.COM by D35.Tymnet.COM; Mon, 20 Feb 89 0:04:12 PST
+Return-path: <OPER@D31.Tymnet.COM> 
+From: OPER@D31.Tymnet.COM 
+Date: Mon, 20 Feb 89 2:02:23 CST 
+To: OPER, SRA, MEYERG, JENGLISH, LELANDY, OSMAN, CARL, JMS, ZONE, SCRIBNER,
+	RODDAMJ, TYMRES5, PKRUMV@F33, DIAG10D 
+
+SYSTEM D31-YY/APR=1415/DOWN AT 22:01 CST 2-19-89 AND UP/
+AT 01:51 CST 2-20-89/DOWN PER SCHEDULED ASP/SET-A/SAVE ?
+AND VERIFY COMPLETE/SYS UP FULL DSKCLN/P035\D-7 MONITOR/
+2048K MEMORY ONLINE/.
+THANK YOU,   DALLAS OPERATIONS............< ERWIN LG >
+Received: from F58.Tymnet.COM by D35.Tymnet.COM; Mon, 20 Feb 89 1:30:33 PST
+Return-path: <OPER@F58.Tymnet.COM> 
+From: OPER@F58.Tymnet.COM 
+Date: Mon, 20 Feb 89 1:30:11 PST 
+To: OPER, BILLF, CARL, JMS, DANIELSR, OSMAN, IPC.S/PAL@EMSIPC.ONTYME, MICHAELB,
+	TERRYB, SRA, RICHARDSON, PKRUMV@F33, LELANDY@D35 
+
+F58/EEE APR:  1332 - ASP DUMP
+SCHEDULED DOWN - 02/19/89 2300
+            UP - 02/20/89 0130
+
+   ACTUAL DOWN - 02/19/89 2300
+      ANSWERED - 02/20/89 0101
+
+NO DSKCLN WAS RUN BEFORE DUMP.
+   G O O D  D U M P
+SET USED: 2   NUMBER OF TAPES USED: 17
+
+LOADED P035/D11 FROM DISK.  SYSTEM CHOSE FAST DSKCLN AT 0057.
+FREMONT OPERATIONS...RKUCERA
+Received: from F22.Tymnet.COM by D35.Tymnet.COM; Mon, 20 Feb 89 3:47:00 PST
+Return-path: <OPER@F22.Tymnet.COM> 
+From: OPER@F22.Tymnet.COM 
+Date: Mon, 20 Feb 89 3:46:36 PST 
+To: OPER, BILLF, CARL, JMS, DANIELSR, OSMAN, IPC.S/PAL@EMSIPC.ONTYME, MICHAELB,
+	TERRYB, SRA, RICHARDSON, PKRUMV@F33, LELANDY@D35 
+
+F22/GGG APR:  1421 - ASP DUMP
+SCHEDULED DOWN - 02/20/89 0000
+            UP - 02/20/89 0330
+
+   ACTUAL DOWN - 02/20/89 0000
+      ANSWERED - 02/20/89 0324
+
+NO DSKCLN WAS RUN BEFORE DUMP.
+   G O O D  D U M P
+SET USED: 2   NUMBER OF TAPES USED: 26
+
+LOADED P035/D11 FROM DISK.  SYSTEM CHOSE FAST DSKCLN AT 0321.
+   HDEV:1 @ BPA5(DSKB5:220005)
+   DATA WRITE ERRORS ON ALMOST ALL TAPES.
+   HAD TO REPLACE MANY OF THEM.
+
+FREMONT OPERATIONS...RKUCERA
+Received: from D31.Tymnet.COM by D35.Tymnet.COM; Mon, 20 Feb 89 12:06:49 PST
+Return-path: <JMS@F74.Tymnet.COM> 
+From: Joe Smith <JMS@F74.Tymnet.COM> 
+Date: Mon, 20 Feb 89 12:02:59 PST 
+To: Monitor Group <JMS>, Carl, Osman 
+Cc: FletcherC 
+Subject: Dallas had problems with SPOOL; needed SPFIX. 
+
+I ran (DANIELSR)SPFIX on all the Dallas systems; most of them had the
+off-by-one bug.  Is there any good reason why we should not put SPFIX
+in (UTIL) under the name SPLFIX?  With support going away, Operations
+should be left with the tools to fix it themselves.   /Joe
+Received: from D54.Tymnet.COM by D35.Tymnet.COM; Tue, 21 Feb 89 5:27:17 PST
+Return-path: <OPER@D54.Tymnet.COM> 
+From: OPER@D54.Tymnet.COM 
+Date: Tue, 21 Feb 89 7:23:44 CST 
+To: OPER, SRA, MEYERG, JENGLISH, LELANDY, OSMAN, CARL, JMS, ZONE, SCRIBNER,
+	RODDAMJ, TYMRES5, PKRUMV@F33, DIAG10D 
+
+D54-II/APR 1376/DOWN AT 01:01(CST) 02-21-89/SCHEDULED FOR 
+SYSTEM P.M./FSC PM'D KL10, SA10, ARM10LS, AND NODE 4274. RAN INLINES
+TO ALL DISKS- NO ERRORS-RAN B-STRING DIAGS-FAILED DFTE DIAG-
+RESEATED DTE MODULES-RETESTED OK./UP AT 03:58(CST) 02-21-89
+/FAST DSKCLN//P035/D-7 MONITOR/4096K MEMORY ONLINE/THX, SL..DCO.
+Received: from D34.Tymnet.COM by D35.Tymnet.COM; Tue, 21 Feb 89 11:51:48 PST
+Return-path: <JMS@D34.Tymnet.COM> 
+From: JMS@D34.Tymnet.COM 
+Date: Tue, 21 Feb 89 11:44:23 PST 
+To: carl 
+
+Jan called, saying she was unable to give RF license to RICHARDSON.
+I verified the "problem": after granting RF to RICHARDSON and doing a LIST,
+it says that he has RA and WF but not RF.  You and I expect that, but
+she didn't and Bill didn't.
+
+Suggestion: Make LIST show "RA WF" as "RA(RF,RP) WF(WP)".  (also RC=>SPY)
+Received: from D56.Tymnet.COM by D35.Tymnet.COM; Tue, 21 Feb 89 21:12:06 PST
+Return-path: <OPER@D56.Tymnet.COM> 
+From: OPER@D56.Tymnet.COM 
+Date: Tue, 21 Feb 89 23:02:42 CST 
+To: OPER, SRA, MEYERG, JENGLISH, LELANDY, OSMAN, CARL, JMS, ZONE, SCRIBNER,
+	RODDAMJ, TYMRES5, PKRUMV@F33, DIAG10D 
+
+D56-JJ/APR=1383/ DOWN AT 22:05 (CST) 02-21-89 AND BACK UP
+AT 22:25 (CST) 02-21-89/ SYSTEM CRASHED WITH KL10 CLOCK
+ERROR STOP, FM PARITY/NOTIFIED MAINTENANCE, JERRY MEYER.
+RAN BOTLOD AND BROUGHT THE SYSTEM BACK UP/FAST DSKCLN
+DONE/4096K MEMORY ONLINE/P035 D-7 MONITOR/.........
+.......THANK YOU.........REDIC PRICE.....DALLAS OPERATIONS
+Received: from F38.Tymnet.COM by D35.Tymnet.COM; Wed, 22 Feb 89 1:54:19 PST
+Return-path: <OPER@F38.Tymnet.COM> 
+From: OPER@F38.Tymnet.COM 
+Date: Wed, 22 Feb 89 1:53:57 PST 
+To: OPER, BILLF, CARL, JMS, DANIELSR, OSMAN, IPC.S/PAL@EMSIPC.ONTYME, MICHAELB,
+	TERRYB, SRA, RICHARDSON, PKRUMV@F33, LELANDY@D35 
+
+F38/AAA APR:  1405 - ASP DUMP
+SCHEDULED DOWN - 02/21/89 2100
+            UP - 02/22/89 0300
+
+   ACTUAL DOWN - 02/21/89 2100
+      ANSWERED - 02/22/89 0124
+
+NO DSKCLN WAS RUN BEFORE DUMP.
+   G O O D  D U M P
+SET USED: 2   NUMBER OF TAPES USED: 38
+
+LOADED P035/D11 FROM DISK.  SYSTEM CHOSE FAST DSKCLN AT 0104.
+   HDEV:1 @ BPA0(DSKB2:380102)
+   HDEV:4 @ BPA13(DSKB12:380110)
+
+FREMONT OPERATIONS...RKUCERA
+`t/g
